@@ -4,7 +4,9 @@ body{
     display: flex;
     justify-content: center;
 }
-
+container{
+    width: 1280px;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -30,21 +32,27 @@ ul{
     background: #A8E5BD;
     display: flex;
     justify-content: space-around;
+
+    font-size: 27pt;
 }
 
 nav{
     margin-top: 50px;
+    display: flex;
 }
 
 nav ul{
-    padding:20px 90px;  
+    
     margin-top:0;
-    width: 1000px;
+    width: 100%;
+    padding:20px 90px;  
 }
 
 
 a{
     text-decoration:none;
+    color:black ;
+    font-family:Microsoft JhengHei;
 }
 
 
