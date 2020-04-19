@@ -89,6 +89,7 @@ a{
 
 
 
+
 .how_to_start_tittle{
     display: flex;
     margin: 10px;
@@ -98,33 +99,33 @@ a{
     background: #A8E5BD;
     padding-left: 150px;
     
+    
 }
-
 .how_to_start_tittle img{
     width:105px ;
     height:105px ;
     align-self: center;
 
 }
-
 .tittle_text{
     margin-left: 35px;
 
     font-size: 56pt;
     line-height: 160px;
+    min-width: 335px;
 }
+
 
 
 
 .content_box{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    padding-left: 450px;
+    padding-left: 650px;
     padding-right: 550px;
     margin: 50px;
 }
-
 
 
 .subtittle{
@@ -150,6 +151,15 @@ a{
     margin-left: 15px;
 }
 
+
+.content_box_left{
+
+    min-width: 550px;
+    height: 400px;
+}
+.content_box_text{
+    font-size: 25pt;
+}
 
 
 .content_box_right{
