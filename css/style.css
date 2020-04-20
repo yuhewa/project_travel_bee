@@ -61,33 +61,44 @@ header{
 
 
 
+
 ul{
     list-style:none;
     background: #9CD3BE;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 
+    height: 69px;
     font-size: 27pt;
 }
 
+
 nav{
     margin: 0px;
-    display: flex;
-    
 }
-
 nav ul{
-    
     margin:0px;
     width: 100%;
-    padding:20px 0px;  
+    padding:0px 0px;  
 }
+nav a{
+    padding: 10px 90px;
+    margin: 0px 0px;
+    
+}
+nav li:hover a {
+	background: rgb(140, 189, 170);
+}
+
 
 
 a{
     text-decoration:none;
+    height: 61px;
     color: #474241;
 }
+
 
 
 .slide{
