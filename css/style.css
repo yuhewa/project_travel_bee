@@ -48,9 +48,15 @@ header{
     width: 90px;
     align-self: flex-end;
     margin:0px 0px 10px 15px;
-    
 }
 
+.sign_in{
+    min-width: 106px;
+}
+
+.join{
+    min-width: 63px;
+}
 
 
 .header_line{
@@ -82,10 +88,12 @@ nav ul{
     width: 100%;
     padding:0px 0px;  
 }
+nav li{
+    min-width: 264px;
+}
 nav a{
-    padding: 10px 90px;
+    padding: 10px 60px;
     margin: 0px 0px;
-    
 }
 nav li:hover a {
 	background: rgb(140, 189, 170);
@@ -194,19 +202,13 @@ a{
 }
 
 
-
-footer ul{
-    padding:40px 0px;  
-    width: 100%;
-}
-
 .btn_start{
     margin: 100px;
     display: flex;
     justify-content: center;
 }
 .btn_start a{
-    width: 509px;
+    min-width: 509px;
     height: 166px;
     
     font-size: 70px;
@@ -220,6 +222,30 @@ footer ul{
     
 }
 
+
+
+
+footer ul{
+    margin:0px;
+    padding:0px 0px;
+
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer li{
+    min-width: 250px;
+}
+footer a{
+    padding: 22px 50px;
+    margin: 0px 0px;
+}
+footer li:hover a {
+	background: rgb(140, 189, 170);
+}
 
 
 .center{
