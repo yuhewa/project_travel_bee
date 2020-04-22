@@ -24,6 +24,10 @@ header{
     padding: 20px;
 }
 
+
+.header_left{
+    min-width: 400px;
+}
 #logo{
     width: 331px ;
     height: 66px;
@@ -33,37 +37,55 @@ header{
     height: 66px;
 }
 
+
 .header_right{
     display: flex;
-    align-self: flex-end;
-
     font-size: 24pt;
-    
 }
+
 .header_right > * {
     margin-left: 15px;
+
 }
 
 .header_right hr{
     width: 90px;
-    align-self: flex-end;
     margin:0px 0px 10px 15px;
 }
 
 .sign_in{
-    min-width: 106px;
+    min-width: 115px;
+    
+    align-self: flex-end;
+    height: 50px;
+    
 }
 
 .join{
-    min-width: 63px;
-}
+    min-width: 75px;
 
+    align-self: flex-end;
+    height: 50px;
+}
 
 .header_line{
     border: 1px solid #474241;
-    height: 32px;
-    align-self: center;
+    height: 40px;
+    align-self: flex-end;
 }
+
+.header_right a{
+    height: 36px;
+    align-self: flex-end;
+}
+.header_right hr{
+    align-self: flex-end;
+}
+.header_right img{
+    align-self: flex-end;
+}
+
+
 
 
 
@@ -202,6 +224,7 @@ a{
 }
 
 
+
 .btn_start{
     margin: 100px;
     display: flex;
@@ -222,6 +245,12 @@ a{
     
 }
 
+.btn_start a:hover{
+    border-color: rgb(132, 179, 161);
+    font-weight: 450;
+}
+
+
 
 
 
@@ -236,16 +265,25 @@ footer ul{
     justify-content: center;
     align-items: center;
 }
-footer li{
-    min-width: 250px;
-}
-footer a{
-    padding: 22px 50px;
+footer .footer_text a{
+    padding: 22px 40px;
     margin: 0px 0px;
 }
-footer li:hover a {
+footer .footer_text:hover a {
 	background: rgb(140, 189, 170);
 }
+
+.footer_text{
+    min-width: 224px;
+}
+.footer_icon{
+    min-width: 38px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+
+
 
 
 .center{
