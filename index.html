@@ -4,143 +4,190 @@
     <meta charset="UTF-8">
     <title>TravelBee</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <container>
+    <div class="container">
+
+        <!--header-->
         <header>
-            <div class="header_left">
-                <a href="#"><img id="logo" src="img/A01-01.png" alt="travelbee" ></a>
-                <img src="img/A02-01.png" alt="">
-            </div>
-
-            <div class="header_right">
-                <a href="#" class="sign_in">Sign in</a>
-                
-                <div class="header_line"></div>
-
-                <a href="#" class="join">Join</a>
-                
-                <div class="header_line"></div>
-                
-                <a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a>
-                <a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a>
-                <hr color="black">
-                <img class="icon" src="/img/serch.png" alt="">
+            <div class="row justify-content-between">
+                <div class="col d-flex">
+                    <a href="#"><img class="logo" src="img/A01-01.png" alt="travelbee" ></a>
+                    <img class="logo_near" src="img/A02-01.png" alt="">
+                </div>
+    
+                <div class="col d-flex align-items-end  justify-content-end header__right">
+                    <a href="#" class="sign_in">Sign in</a>
+                    
+                    <div class="header_line"></div>
+    
+                    <a class="join" href="#" >Join</a>
+                    
+                    <div class="header_line"></div>
+                    
+                    <a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a>
+                    <a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a>
+                    <img class="icon" src="/img/serch.png" alt="">
+                </div>
             </div>
             
         </header>
         
-        <nav>
-            <ul>
-                <li><a href="#">關於我們</a></li>
-                <li><a href="#">選擇地區</a></li>
-                <li><a href="#">客製行程</a></li>
-                <li><a href="#">榮譽Bee</a></li>
-                <li><a href="#">成為Bee</a></li>
-            </ul>
-        </nav>
+
+
+
+        <!-- 下拉式選單-->
+        <div class="row justify-content-center">
+            <ul class="nav nav-tabs nav-fill nav-customized">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">關於我們</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">創作理念</a>
+                      <a class="dropdown-item" href="#">線上客服</a>
+                  </div>
+                </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">選擇地區</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">北部</a>
+                        <a class="dropdown-item" href="#">中部</a>
+                        <a class="dropdown-item" href="#">南部</a>
+                        <a class="dropdown-item" href="#">東部</a>
+                    </div>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link" href="">客製行程</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">榮譽Bee</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">成為Bee</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">一步步帶領你成為Bee</a>
+                        <a class="dropdown-item" href="#">所需文件</a>
+                        <a class="dropdown-item" href="#">立即註冊</a>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+        
 
     
+
+
+        <!--main-->
         <main>
 
+            <!--滑動區塊-->
+            <div class="row justify-content-center">
+                <img class="slide" src="img/slide.jpg" alt="滑動示意圖">
+            </div>
+            
 
-            <span class="center"><img class="slide" src="img/slide.jpg" alt="滑動示意圖"></span>
-
-
-
-            <article class="how_to_start">
-                <span class="center">
-                    <section class="how_to_start_tittle">
-                        <img src="img/how_to_start_tittleIcon.jpg" alt="bee_icon">
-                        <div class="tittle_text">如何開始?</div>
-                    </section>
-                </span>
-                <section class="how_to_start_content">
-
-
-                    <div class="content_box">
-                        <div class="content_box_left">
-                            <div class="subtittle">
-                                <div class="subtittle_number">1</div>
-                                <div class="subtittle_text">提供需求</div>
-                            </div>
-                            <p class="content_box_text">
-                                提供您的旅遊相關需求。<br>
-                                例如:人數、天數、預算、地區、<br>
-                                年齡、團體關係、住宿等級...等。
-                            </p>
-                        </div>
-                        <div class="content_box_right">
-                            <img src="img/contentBox1.jpg" alt="小圖片">
-                        </div>
-                    </div>
-
-
-
-                    <div class="content_box">
-                        <div class="content_box_left">
-                            <div class="subtittle">
-                                <div class="subtittle_number">2</div>
-                                <div class="subtittle_text">Bee規劃批准</div>
-                            </div>
-                            <p class="content_box_text">
-                                當有Bee注意到您的需求單，<br>
-                                並覺得能勝任而提出規劃申請後，<br>
-                                您就可以批准此Bee替您規劃。
-                            </p>
-                        </div>
-                        <div class="content_box_right">
-                            <img src="img/contentBox2.jpg" alt="小圖片">
-                        </div>
-                    </div>
-
-                    <div class="content_box">
-                        <div class="content_box_left">
-                            <div class="subtittle">
-                                <div class="subtittle_number">3</div>
-                                <div class="subtittle_text">取得旅遊規劃書!</div>
-                            </div>
-                            <p class="content_box_text">
-                                經過約定的工作日後，<br>
-                                Bee會將旅遊規劃一次呈現給您。<br>
-                                給予服務的Bee一份評價，<br>
-                                然後好好享受一趟旅行吧!
-                            </p>
-                        </div>
-                        <div class="content_box_right">
-                            <img src="img/contentBox3.jpg" alt="小圖片">
-                        </div>
-                    </div>
-
-
-                </section>
-
-
-                <section class="btn_start">
-                    <a href="#">立即啟用服務</a>
-                </section>
-                
+            <!--如何開始 -->
+            <div class="row justify-content-center">
+                <article class="how_to_start">
+                    <span class="center">
+                        <section class="how_to_start_tittle">
+                            <img src="img/how_to_start_tittleIcon.jpg" alt="bee_icon">
+                            <div class="tittle_text">如何開始?</div>
+                        </section>
+                    </span>
+                    <section class="how_to_start_content">
                     
-                
-
+    
+                        <div class="content_box">
+                            <div class="content_box_left">
+                                <div class="subtittle">
+                                    <div class="subtittle_number">1</div>
+                                    <div class="subtittle_text">提供需求</div>
+                                </div>
+                                <p class="content_box_text">
+                                    提供您的旅遊相關需求。<br>
+                                    例如:人數、天數、預算、地區、<br>
+                                    年齡、團體關係、住宿等級...等。
+                                </p>
+                            </div>
+                            <div class="content_box_right">
+                                <img src="img/contentBox1.jpg" alt="小圖片">
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="content_box">
+                            <div class="content_box_left">
+                                <div class="subtittle">
+                                    <div class="subtittle_number">2</div>
+                                    <div class="subtittle_text">Bee規劃批准</div>
+                                </div>
+                                <p class="content_box_text">
+                                    當有Bee注意到您的需求單，<br>
+                                    並覺得能勝任而提出規劃申請後，<br>
+                                    您就可以批准此Bee替您規劃。
+                                </p>
+                            </div>
+                            <div class="content_box_right">
+                                <img src="img/contentBox2.jpg" alt="小圖片">
+                            </div>
+                        </div>
+    
+                        <div class="content_box">
+                            <div class="content_box_left">
+                                <div class="subtittle">
+                                    <div class="subtittle_number">3</div>
+                                    <div class="subtittle_text">取得旅遊規劃書!</div>
+                                </div>
+                                <p class="content_box_text">
+                                    經過約定的工作日後，<br>
+                                    Bee會將旅遊規劃一次呈現給您。<br>
+                                    給予服務的Bee一份評價，<br>
+                                    然後好好享受一趟旅行吧!
+                                </p>
+                            </div>
+                            <div class="content_box_right">
+                                <img src="img/contentBox3.jpg" alt="小圖片">
+                            </div>
+                        </div>
+                    </section>
+    
+                    <div class="row justify-content-center">
+                        <section class="btn_start">
+                            <a href="#">立即啟用服務</a>
+                        </section>
+                    </div>
+                    
+                    
+                        
                 </article>
+            </div>
+            
+
+                <!--以下預計下個功能 -->
+
         </main>
         
         
         <footer>
-                <ul>
-                    <li class="footer_text"><a href="#">關於我們</a></li>
-                    <li class="footer_text"><a href="#">聯絡我們</a></li>
-                    <li class="footer_text"><a href="#">會員專區</a></li>
-                    <li class="footer_text"><a href="#">隱私政策</a></li>
-                    <li class="footer_text"><a href="#">選擇語言</a></li>
-                    <li class="footer_icon"><a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a></li>
-                    <li class="footer_icon"><a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a></li>
+                <ul class="nav nav-fill">
+                    <li class="footer_text nav-item"><a class="nav-link" href="#">關於我們</a></li>
+                    <li class="footer_text nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
+                    <li class="footer_text nav-item"><a class="nav-link" href="#">會員專區</a></li>
+                    <li class="footer_text nav-item"><a class="nav-link" href="#">隱私政策</a></li>
+                    <li class="footer_text nav-item"><a class="nav-link" href="#">選擇語言</a></li>
+                    <li class="footer_icon nav-item align-self-center"><a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a></li>
+                    <li class="footer_icon nav-item align-self-center"><a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a></li>
                 </ul>  
                 
         </footer>
 
-    </container>
+    </div>
 </body>
 </html>
