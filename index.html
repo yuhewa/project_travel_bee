@@ -11,28 +11,28 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
         <!--header-->
         <header>
-            <div class="row justify-content-between">
+            <div class="row justify-content-between header__row">
                 <div class="col d-flex">
                     <a href="#"><img class="logo" src="img/A01-01.png" alt="travelbee" ></a>
                     <img class="logo_near" src="img/A02-01.png" alt="">
                 </div>
     
-                <div class="col d-flex align-items-end  justify-content-end header__right">
+                <div class="col d-flex align-items-end justify-content-end header__right">
                     <a href="#" class="sign_in">Sign in</a>
                     
-                    <div class="header_line"></div>
+                    <div class="header__line">｜</div>
     
                     <a class="join" href="#" >Join</a>
                     
-                    <div class="header_line"></div>
+                    <div class="header__line">｜</div>
                     
-                    <a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a>
-                    <a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a>
-                    <img class="icon" src="/img/serch.png" alt="">
+                    <a href="#"><img class="icon fb--icon" src="img/fb_icon.png" alt="fb"></a>
+                    <a href="#"><img class="icon ig--icon" src="img/ig_icon.png" alt="ig"></a>
+                    <a href="#"><img class="icon search--icon" src="/img/serch.png" alt=""></a>
                 </div>
             </div>
             
@@ -42,8 +42,8 @@
 
 
         <!-- 下拉式選單-->
-        <div class="row justify-content-center">
-            <ul class="nav nav-tabs nav-fill nav-customized">
+        <div class="row nav-row justify-content-center navigation">
+            <ul class="nav nav-tabs nav-fill nav-customized align-content-center">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">關於我們</a>
                   <div class="dropdown-menu">
@@ -133,10 +133,10 @@
 
             <!--如何開始 -->
             <div class="row justify-content-center">
-                <article class="how_to_start">
+                <article class="HowToStart">
                     <span class="center">
-                        <section class="how_to_start_tittle">
-                            <img src="img/how_to_start_tittleIcon.jpg" alt="bee_icon">
+                        <section class="HowToStart__tittle">
+                            <img src="img/how_to_start_tittleIcon.png" alt="bee_icon">
                             <div class="tittle_text">如何開始?</div>
                         </section>
                     </span>
@@ -156,7 +156,7 @@
                                 </p>
                             </div>
                             <div class="content_box_right">
-                                <img src="img/contentBox1.jpg" alt="小圖片">
+                                <img src="img/contentBox1.png" alt="小圖片">
                             </div>
                         </div>
     
@@ -175,7 +175,7 @@
                                 </p>
                             </div>
                             <div class="content_box_right">
-                                <img src="img/contentBox2.jpg" alt="小圖片">
+                                <img src="img/contentBox2.png" alt="小圖片">
                             </div>
                         </div>
     
@@ -193,15 +193,14 @@
                                 </p>
                             </div>
                             <div class="content_box_right">
-                                <img src="img/contentBox3.jpg" alt="小圖片">
+                                <img src="img/contentBox3.png" alt="小圖片">
                             </div>
                         </div>
                     </section>
     
                     <div class="row justify-content-center">
-                        <section class="btn_start">
-                            <a href="#">立即啟用服務</a>
-                        </section>
+                        
+                            <a href="#"><img class="HowToStart__btn" src="img/start_btn.png" alt=""></a>
                     </div>
                     
                     
@@ -215,18 +214,18 @@
         </main>
         
         
-        <footer>
-                <ul class="nav nav-fill">
-                    <li class="footer_text nav-item"><a class="nav-link" href="#">關於我們</a></li>
-                    <li class="footer_text nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
-                    <li class="footer_text nav-item"><a class="nav-link" href="#">會員專區</a></li>
-                    <li class="footer_text nav-item"><a class="nav-link" href="#">隱私政策</a></li>
-                    <li class="footer_text nav-item"><a class="nav-link" href="#">選擇語言</a></li>
-                    <li class="footer_icon nav-item align-self-center"><a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a></li>
-                    <li class="footer_icon nav-item align-self-center"><a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a></li>
+        <div class="row footer">
+                <ul class="nav nav-tabs justify-content-center align-items-center">
+                    <li class="footer__text nav-item"><a class="nav-link footer__item" href="#">關於我們</a></li>
+                    <li class="footer__text nav-item"><a class="nav-link footer__item" href="#">聯絡我們</a></li>
+                    <li class="footer__text nav-item"><a class="nav-link footer__item" href="#">會員專區</a></li>
+                    <li class="footer__text nav-item"><a class="nav-link footer__item" href="#">隱私政策</a></li>
+                    <li class="footer__text nav-item"><a class="nav-link footer__item" href="#">選擇語言</a></li>
+                    <li class="footer__icon nav-item align-self-center"><a href="#"><img class="icon" src="img/fb_icon.png" alt="fb"></a></li>
+                    <li class="footer__icon nav-item align-self-center"><a href="#"><img class="icon" src="img/ig_icon.png" alt="ig"></a></li>
                 </ul>  
-                
-        </footer>
+        </div>
+        
 
     </div>
 </body>

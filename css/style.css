@@ -1,47 +1,68 @@
 
+html{
+    font-size:35pt;
+
+}
+
 body{
     background-color:#FFFDF3;
     display: flex;
     justify-content: center;
 
     font-family: Microsoft JhengHei;
-    font-weight: 550;
+   /* font-weight: 550; */
     color: #474241;
 }
 
 .icon{
-    width: 36.5px;
-    height: 35.5px;
+    width: 29px;
+    height: 29px;
 }
 
-.container{
-    width: 100%s;
+
+.container-fluid{
+    width: 1280px;
     margin: 0px;
 }
 
 
 
 header{
-    margin-bottom: 20px;
-    font-size: 20pt;
+    margin-bottom: 15px;
+    font-size: 0.42em;
 }
+
+
 .logo{
-    width: 331px ;
+    width: 331px;
     height: 66px;
+    margin-left: 113px;
 }
 .logo_near{
     width: 60px;
     height: 66px;
-}
-.header_line{
-    border: 1px solid #474241;
-    height: 40px;
-}
-.header__right > * {
-    margin-left: 15px;
+    margin-left:30px;
 }
 
 
+.header__right{
+    margin-right: 122px;
+
+}
+
+
+.icon{
+    margin-left: 10px;
+
+}
+
+
+
+.header__search{
+    width: 82px;
+    margin:0px 10px ;
+
+}
 
 
 
@@ -51,13 +72,29 @@ header{
 
 .nav-customized{
     background: #9CD3BE;
-    font-size: 20pt;
+    font-size: 0.57rem;
+}
+
+
+
+.navigation .nav-link{
+    padding-left:41.5px ;
+    padding-right:41.5px ;
+}
+.nav-row{
+    background: #9CD3BE;
+    height: 95px;
+    margin-bottom: 75px;
 }
 
 .nav-tabs .nav-link:hover{    
     background-color: rgb(136, 185, 167);
     color: #474241;
     border-color: rgb(136, 185, 167) rgb(136, 185, 167) rgb(136, 185, 167);
+}
+
+.dropdown-menu{
+    font-size: 0.57rem;
 }
 .dropdown-item:hover{
    color: #16181b;
@@ -68,6 +105,12 @@ ul a{
   color: #474241;
   font-family: Microsoft JhengHei;
   font-weight: 550;
+}
+
+
+/*下面用來去掉選單箭頭*/
+.dropdown-toggle::after {
+    display:none;
 }
 
 
@@ -103,7 +146,7 @@ a,a:hover{
 
 
 .slide{
-    margin: 50px 0px;
+    margin: 0px 0px;
 
     width: 1047px;
     height: 655px;
@@ -111,18 +154,19 @@ a,a:hover{
 
 
 
-.how_to_start_tittle{
+.HowToStart__tittle{
     display: flex;
     margin: 10px;
     
-    width: 1000px;
+    width: 1280px;
     height: 160px;
     background: #9CD3BE;
     padding-left: 150px;
     
-    
+    margin-top: 75px;
+    margin-bottom: 143px;
 }
-.how_to_start_tittle img{
+.HowToStart__tittle img{
     width:105px ;
     height:105px ;
     align-self: center;
@@ -131,9 +175,11 @@ a,a:hover{
 .tittle_text{
     margin-left: 35px;
 
-    font-size: 56pt;
+    font-size: 1em;
     line-height: 160px;
     min-width: 335px;
+    
+    font-weight: 550;
 }
 
 
@@ -144,28 +190,28 @@ a,a:hover{
     justify-content: center;
 
     
-    margin: 50px;
+    margin: 100px;
 }
 
 
 .subtittle{
     display: flex;
-    font-size: 40pt;
+    font-size: 0.71rem;
     
     align-items:center ;
 }
 .subtittle_number{
     
-    height: 65px;
-    
+    height: 60px;
+    line-height: 60px;
     border:1px solid #9CD3BE;
-    border-radius: 25px;
+    border-radius: 20px;
     
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     
     background-color: #9CD3BE;
-
+    
 }
 .subtittle_text{
     margin-left: 15px;
@@ -174,58 +220,72 @@ a,a:hover{
 
 .content_box_left{
 
-    min-width: 550px;
-    height: 300px;
+    min-width: 417px;
+    height: 194px;
 }
 .content_box_text{
-    font-size: 25pt;
+    font-size: 0.57rem;
+    margin-top: 21px;
+    margin-bottom: 0px;
 }
 
 
 .content_box_right{
-    margin-left: 100px;
+    align-self: center;
+    margin-left: 75px;
 
 }
 .content_box_right img{
-    width: 236px;
-    height: 235px;
+    width: 160px;
+    height: 160px;
 
 }
 
 
-.btn_start{
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-.btn_start a{
+.HowToStart__btn{
+    margin: 20px;
+    width: 615px;
+    height: 166px;
 
-    font-size: 70px;    
-    border: 20px solid #9CD3BE;
-    border-radius: 70px;
-    padding: 20px 60px;
-
-}
-.btn_start a:hover{
-    border-color: rgb(132, 179, 161);
-    font-weight: 450;
+  
 }
 
 
 
 
-footer ul{
+
+.footer{
+    margin-top: 126px;
+    height: 126px;
+    
+}
+
+.footer ul{
     list-style:none;
     background: #9CD3BE;
 
     margin:0px;
     padding:0px 0px;
 
+    
     width: 100%;
-    font-size: 20pt;
+    height: 126px;
+    
+    font-size: 0.57rem;
+}
 
+.footer .nav-link{
+    width:158.3px;
+    padding-left:22.5px ;
+    padding-right:22.5px ;
+}
+
+.footer__text{
+    width: 158.3px;
 
 }
-footer .footer_text:hover a {
+
+.footer .footer_text:hover a {
 	background: rgb(140, 189, 170);
 }
 
