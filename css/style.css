@@ -242,6 +242,10 @@ a,a:hover{
 }
 
 
+.HowToStart__btn__link:hover .HowToStart__btn{
+    -webkit-filter:brightness(80%);
+}
+
 .HowToStart__btn{
     margin: 20px;
     width: 615px;
