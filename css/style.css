@@ -28,6 +28,7 @@ body{
 
 
 header{
+    margin-top: 15px;
     margin-bottom: 15px;
     font-size: 0.42em;
 }
@@ -144,6 +145,11 @@ a,a:hover{
 }
 
 
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
 
 .slide{
     margin: 0px 0px;
@@ -154,7 +160,9 @@ a,a:hover{
 
 
 
-.HowToStart__tittle{
+
+/*Tittle的部分*/
+.HowToStart__tittle , .FindBee__tittle , .BecomeBee__tittle{
     display: flex;
     margin: 10px;
     
@@ -166,7 +174,7 @@ a,a:hover{
     margin-top: 75px;
     margin-bottom: 143px;
 }
-.HowToStart__tittle img{
+.HowToStart__tittle img , .FindBee__tittle img , .BecomeBee__tittle img{
     width:105px ;
     height:105px ;
     align-self: center;
@@ -181,6 +189,7 @@ a,a:hover{
     
     font-weight: 550;
 }
+
 
 
 
@@ -233,12 +242,10 @@ a,a:hover{
 .content_box_right{
     align-self: center;
     margin-left: 75px;
-
 }
 .content_box_right img{
     width: 160px;
     height: 160px;
-
 }
 
 
@@ -250,10 +257,31 @@ a,a:hover{
     margin: 20px;
     width: 615px;
     height: 166px;
-
-  
 }
 
+
+
+
+
+.BecomeBee__pros{
+    margin-bottom: 100px;
+}
+
+.BecomeBee__pros .pro1{
+    width: 212px;
+    height: 189px;
+    margin:20px 0px;
+}
+.BecomeBee__pros .pro2{
+    width: 175px;
+    height: 186px;
+    margin:20px 0px;
+}
+.BecomeBee__pros .pro3{
+    width: 130px;
+    height: 177px;
+    margin:20px 0px;
+}
 
 
 
