@@ -27,7 +27,6 @@ body{
 }
 
 
-
 header{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -58,8 +57,6 @@ header{
 
 }
 
-
-
 .header__search{
     width: 82px;
     margin:0px 10px ;
@@ -76,8 +73,6 @@ header{
     background: #9CD3BE;
     font-size: 0.57rem;
 }
-
-
 
 .navigation .nav-link{
     padding-left:41.5px ;
@@ -118,7 +113,7 @@ ul a{
 }
 
 
-/*下面用來去掉選單箭頭*/
+/*去掉選單箭頭*/
 .dropdown-toggle::after {
     display:none;
 }
