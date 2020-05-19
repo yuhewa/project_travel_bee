@@ -44,7 +44,12 @@
 
         <!-- 下拉式選單-->
         <div class="row nav-row justify-content-center navigation">
-            <ul class="nav nav-tabs nav-fill nav-customized align-content-center">
+            <div class="col col-6">
+
+            </div>
+
+            <div class="col col-6">
+                <ul class="nav nav-tabs nav-fill nav-customized align-content-center">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">關於我們</a>
                   <div class="dropdown-menu">
@@ -78,6 +83,8 @@
                     </div>
                   </li>
               </ul>
+            </div>
+            
         </div>
         
 
@@ -87,16 +94,16 @@
         <!--main-->
         <main>
 
-            <!--滑動區塊-->
+            <!-- Slide -->
             <div class="row justify-content-center">
                 <div id="my-carousel" class="carousel slide " data-ride="carousel">
-
+                    <!-- slide下按鈕 -->
                     <ol class="carousel-indicators">
                         <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#my-carousel" data-slide-to="1"></li>
                         <li data-target="#my-carousel" data-slide-to="2"></li>
                     </ol>
-                        
+                    <!-- slide內容 -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img class="d-block w-100" src="img/keyvision_01.png" alt="First slide">
@@ -109,7 +116,7 @@
                         </div>
                     </div>
                     
-                <!-- 取消左右按鈕
+                    <!-- slide左右按鈕 -->
                     <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -118,38 +125,83 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                -->
-                    
-            
+                
                 </div>
             </div>
-    
+            
+            <div class="row reason">
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <p>3個愛上Travelbee的理由</p>
+                        <div class="reason__color_block_top"></div>
+                    </div>
+
+                    <div class="row reason__row justify-content-center">
+                        <div class="col col-lg-4">
+                            <div class="row">
+                                <img src="img/why_love_1.png" alt="icon" class="reason__icon">
+                                <div class="reason__text">節省您的規劃時間</div> 
+                            </div>
+                            
+                        </div>
+                        <div class="col col-lg-4">
+                            <div class="row">
+                                <img src="img/why_love_2.png" alt="icon" class="reason__icon">
+                                <div class="reason__text">依需求客製行程</div>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-lg-4">
+                            <div class="row">
+                                <img src="img/why_love_3.png" alt="icon" class="reason__icon">
+                                <div class="reason__text">任選優質Bee</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reason__color_block_bottom"></div>
+                    
+                </div>
+                
+
+            </div>
 
             <!--如何開始區塊 -->
             <div class="row justify-content-center">
-                <article class="HowToStart">  
-                    <section class="HowToStart__tittle">
-                        <img src="img/tittleIcon.png" alt="bee_icon">
-                        <div class="HowToStart__text tittle_text">如何開始?</div>
-                    </section>
-
+                <article class="HowToStart"> 
+                    <!--標題-->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 HowToStart__tittle"> 
+                            <img src="img/tittleIcon.png" alt="bee_icon">
+                            <div class="HowToStart__text tittle_text">如何開始?</div>
+                            <div class="color_block"></div>                      
+                        </div>
+                    </div>
+                    
+                    <!--內容-->
                     <section class="HowToStart__content">
-                        <div class="content_box">
-                            <div class="content_box_left">
-                                <div class="subtittle">
-                                    <div class="subtittle_number">1</div>
-                                    <div class="subtittle_text">提供需求</div>
-                                </div>
+                        
+                        <div class="row justify-content-center">
+                            <div class="col col-lg-1 align-self-center">
+                                <div class="row subtittle_number align-items-center justify-content-center">
+                                    1
+                                </div>              
+                            </div>
+
+                            <div class="col col-lg-4">
+                                <div class="subtittle_text">提供需求</div>
                                 <p class="content_box_text">
-                                    提供您的旅遊相關需求。<br>
+                                     提供您的旅遊相關需求。<br>
                                     例如:人數、天數、預算、地區、<br>
-                                    年齡、團體關係、住宿等級...等。
+                                   年齡、團體關係、住宿等級...等。
                                 </p>
                             </div>
-                            <div class="content_box_right">
+
+                            <div class="col col-lg-3 content_box_right">
                                 <img src="img/contentBox1.png" alt="小圖片">
                             </div>
                         </div>
+                        
+
     
                         <div class="content_box">
                             <div class="content_box_left">
@@ -186,9 +238,10 @@
                             </div>
                         </div>
                     </section>
-    
+
                     <div class="row justify-content-center">
                             <a href="#" class="HowToStart__btn__link"><img class="HowToStart__btn" src="img/start_btn.png" alt=""></a>
+                            <div class="btn_color_block"></div>    
                     </div>
 
                 </article>
@@ -196,12 +249,15 @@
             
 
             <!-- 尋找Bee區塊 -->
-            <div class="row">
+            <div class="row justify-content-center">
                 <article class="FindBee">
-                    <section class="FindBee__tittle">
+                    <div class="row justify-content-center">
+                        <section class="FindBee__tittle">
                         <img src="img/tittleIcon.png" alt="bee_icon">
                         <div class="FindBeeText__text tittle_text">尋找Bee</div>
                     </section>
+                    </div>
+                    
                     <section class="FindBee__content">
 
                         <!--滑動區塊-->
@@ -233,7 +289,12 @@
                             <p>找不到心儀的Bee嗎?</p>
                         </div>
                         <div class="row justify-content-center">
-                            <a href="#" class="HowToStart__btn__link"><img class="HowToStart__btn" src="img/bigbtn_02.png" alt=""></a>
+                            <div class="col col-lg-6">
+                                <a href="#" class="HowToStart__btn__link">
+                                    <img class="HowToStart__btn" src="img/bigbtn_02.png" alt="">
+                                </a>
+                            </div>
+                            
                         </div>
     
                     </section>
@@ -242,12 +303,15 @@
             
 
             <!-- 成為Bee區塊-->
-            <div class="row">
+            <div class="row justify-content-center">
                 <article class="BecomeBee">
-                    <section class="BecomeBee__tittle">
+                    <div class="row justify-content-center">
+                        <section class="BecomeBee__tittle">
                         <img src="img/tittleIcon.png" alt="bee_icon">
                         <div class="BecomeBee__text tittle_text">成為Bee</div>
                     </section>
+                    </div>
+                    
                     <section class="BecomeBee__content">
                         <div class="row justify-content-center">
                             <p>成為Bee有以下優勢:</p>
@@ -255,19 +319,19 @@
                         <div class="row BecomeBee__pros justify-content-center">
                             <div class="col col-3">
                                 <div class="row justify-content-center">
-                                    <img class="pro1" src="img/pros_01.png" alt="">
+                                    <img class="pro" src="img/pros_01.png" alt="">
                                     <p>人性化配對</p>
                                 </div>
                             </div>
                             <div class="col col-3">
                                 <div class="row justify-content-center">
-                                    <img class="pro2" src="img/pros_02.png" alt="">
+                                    <img class="pro" src="img/pros_02.png" alt="">
                                     <p>透過知識獲利</p>
                                 </div>
                             </div>
                             <div class="col col-3">
                                 <div class="row justify-content-center">
-                                    <img class="pro3" src="img/pros_03.png" alt="">
+                                    <img class="pro" src="img/pros_03.png" alt="">
                                     <p>累積評價知名度</p>
                                 </div>
                             </div>
