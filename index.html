@@ -13,13 +13,11 @@
 </head>
 <body>
     <div class="container-fluid">
-
         <!--header-->
-        <header>
-            <div class="row justify-content-between header__row">
-                <div class="col d-flex">
-                    <a href="#"><img class="logo" src="img/A01-01.png" alt="travelbee" ></a>
-                    <img class="logo_near" src="img/A02-01.png" alt="">
+        <header class="row justify-content-between header__row">
+                <div class="col col-lg-2 d-flex">
+                    <a href="#"><img class="logo" src="img/logo_bee_v2-01.png" alt="travelbee" ></a>
+                    
                 </div>
     
                 <div class="col d-flex align-items-end justify-content-end header__right">
@@ -34,23 +32,22 @@
                     <a href="#"><img class="icon fb--icon" src="img/fb_icon.png" alt="fb"></a>
                     <a href="#"><img class="icon ig--icon" src="img/ig_icon.png" alt="ig"></a>
                     <a href="#"><img class="icon search--icon" src="img/search.png" alt="search"></a>
-                </div>
-            </div>
-            
+                </div>   
         </header>
         
 
 
 
         <!-- nav  下拉式選單 -->
-        <div class="row nav-row justify-content-center navigation">
-            <div class="col col-6">
+        
+        <nav class="row nav-row justify-content-center navigation">
+            <div class="col col-lg-7">
                 <div class="row">
                     <div class="nav__color_block"></div>
                 </div>
             </div>
 
-            <div class="col col-6">
+            <div class="col col-lg-5">
                 <ul class="nav nav-tabs nav-fill nav-customized align-content-center">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">關於我們</a>
@@ -87,7 +84,7 @@
               </ul>
             </div>
             
-        </div>
+        </nav>
         
 
     
@@ -95,10 +92,10 @@
 
         <!--main-->
         <main>
-
             <!-- Carousel 滑動區塊-->
-            <div class="row justify-content-center">
-                <div id="my-carousel" class="carousel slide " data-ride="carousel">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div id="my-carousel" class="carousel slide " data-ride="carousel">
                     <!-- slide下按鈕 -->
                     <ol class="carousel-indicators">
                         <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
@@ -128,132 +125,148 @@
                         <span class="sr-only">Next</span>
                     </a>
                 
-                </div>
-            </div>
-            
-            <!-- 為什麼選Travel的區塊-->
-            <div class="row reason">
-                <div class="col col-lg-12">
-                    <div class="row justify-content-center">
-                        <p>3個愛上Travelbee的理由</p>
-                        <div class="reason__color_block_top"></div>
                     </div>
-
-                    <div class="row reason__row justify-content-center">
-                        <div class="col col-lg-4">
-                            <div class="row">
-                                <img src="img/why_love_1.png" alt="icon" class="reason__icon">
-                                <div class="reason__text">節省您的規劃時間</div> 
-                            </div>
-                            
-                        </div>
-                        <div class="col col-lg-4">
-                            <div class="row">
-                                <img src="img/why_love_2.png" alt="icon" class="reason__icon">
-                                <div class="reason__text">依需求客製行程</div>
-                            </div>
-                            
-                        </div>
-                        <div class="col col-lg-4">
-                            <div class="row">
-                                <img src="img/why_love_3.png" alt="icon" class="reason__icon">
-                                <div class="reason__text">任選優質Bee</div>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="reason__color_block_bottom"></div>
-                    
                 </div>
                 
+            </div>
+            
+            <!-- 為什麼選擇Travel的區塊-->
+            <div class="row reason">
+                <div class="col col-lg-12">
+                    <div class="row reason__tittle justify-content-center">
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <p>3個愛上Travelbee的理由</p>
+                        </div>
+                           <!--色塊
+                               <div class="reason__color_block_top"></div> 
+                            -->            
+                    </div>
+                    
+                    <div class="row reason__pro justify-content-center">
+                        <div class="col col-lg-8 reason__pro__col d-flex justify-content-center">
+                            <div class="row w-100 align-content-center">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="img/why_love_1.png" alt="icon" class="reason__icon">
+                                    <div class="reason__text">節省您的規劃時間</div> 
+                                </div>
 
+                                <div class="col d-flex justify-content-center">
+                                    <img src="img/why_love_2.png" alt="icon" class="reason__icon">
+                                    <div class="reason__text">依需求客製行程</div>
+                                </div>
+
+                                <div class="col d-flex justify-content-center">
+                                    <img src="img/why_love_3.png" alt="icon" class="reason__icon">
+                                    <div class="reason__text">任選優質Bee</div>
+                                </div>
+                                
+                                   
+                                
+                              
+                                
+                            </div>
+                                            
+                        </div>
+
+                        <!--搞不定的陰影
+                            <div class="reason__color_block_bottom"></div>
+                         -->
+                        
+                    </div>
+                    
+                    
+                </div>
             </div>
 
             <!--如何開始區塊 -->
-            <div class="row justify-content-center">
-                <article class="HowToStart"> 
-                    <!--標題-->
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 HowToStart__tittle"> 
-                            <img src="img/tittleIcon.png" alt="bee_icon">
-                            <div class="HowToStart__text tittle_text">如何開始?</div>
-                            <div class="color_block"></div>                      
-                        </div>
-                    </div>
-                    
-                    <!--內容-->
-                    <section class="HowToStart__content">
-                        
+            
+                    <article class="HowToStart"> 
+                        <!--標題-->
                         <div class="row justify-content-center">
-                            <div class="col col-lg-1 align-self-center">
-                                <div class="row subtittle_number align-items-center justify-content-center">
-                                    1
-                                </div>              
-                            </div>
-
-                            <div class="col col-lg-4">
-                                <div class="subtittle_text">提供需求</div>
-                                <p class="content_box_text">
-                                     提供您的旅遊相關需求。<br>
-                                    例如:人數、天數、預算、地區、<br>
-                                   年齡、團體關係、住宿等級...等。
-                                </p>
-                            </div>
-
-                            <div class="col col-lg-3 content_box_right">
-                                <img src="img/contentBox1.png" alt="小圖片">
+                            <div class="col col-12 d-flex justify-content-center HowToStart__tittle"> 
+                                <img src="img/tittleIcon.png" alt="bee_icon">
+                                <div class="HowToStart__text tittle_text">如何開始?</div>
+                                <!--色塊 <div class="color_block"></div>-->                      
                             </div>
                         </div>
                         
-
-    
-                        <div class="content_box">
-                            <div class="content_box_left">
-                                <div class="subtittle">
-                                    <div class="subtittle_number">2</div>
-                                    <div class="subtittle_text">Bee規劃批准</div>
-                                </div>
-                                <p class="content_box_text">
-                                    當有Bee注意到您的需求單，<br>
-                                    並覺得能勝任而提出規劃申請後，<br>
-                                    您就可以批准此Bee替您規劃。
-                                </p>
-                            </div>
-                            <div class="content_box_right">
-                                <img src="img/contentBox2.png" alt="小圖片">
-                            </div>
-                        </div>
-    
-                        <div class="content_box">
-                            <div class="content_box_left">
-                                <div class="subtittle">
-                                    <div class="subtittle_number">3</div>
-                                    <div class="subtittle_text">取得旅遊規劃書!</div>
-                                </div>
-                                <p class="content_box_text">
-                                    經過約定的工作日後，<br>
-                                    Bee會將旅遊規劃一次呈現給您。<br>
-                                    給予服務的Bee一份評價，<br>
-                                    然後好好享受一趟旅行吧!
-                                </p>
-                            </div>
-                            <div class="content_box_right">
-                                <img src="img/contentBox3.png" alt="小圖片">
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="row justify-content-center">
-                        <div class="col col-lg-6">
-                            <a href="#" class="HowToStart__btn__link"><img class="HowToStart__btn" src="img/start_btn.png" alt=""></a>
-                            <div class="btn_color_block"></div>    
-                        </div>
+                        <!--內容-->
+                        <section class="HowToStart__content">
                             
-                    </div>
+                            <div class="row w-100 justify-content-center">
+                                <div class="col d-flex justify-content-center align-self-center">
+                                    <div class="subtittle_number">
+                                        1
+                                    </div>          
+                                </div>
+    
+                                <div class="col col-lg-6">
+                                    <div class="subtittle_text">提供需求</div>
+                                    <p class="content_box_text">
+                                         提供您的旅遊相關需求。<br>
+                                        例如:人數、天數、預算、地區、<br>
+                                       年齡、團體關係、住宿等級...等。
+                                    </p>
+                                </div>
+    
+                                <div class="col content_box_right">
+                                    <img src="img/contentBox1.png" alt="小圖片">
+                                </div>
+                            </div>
+                            
+    
+                            <!-- 
+<div class="content_box">
+                                <div class="content_box_left">
+                                    <div class="subtittle">
+                                        <div class="subtittle_number">2</div>
+                                        <div class="subtittle_text">Bee規劃批准</div>
+                                    </div>
+                                    <p class="content_box_text">
+                                        當有Bee注意到您的需求單，<br>
+                                        並覺得能勝任而提出規劃申請後，<br>
+                                        您就可以批准此Bee替您規劃。
+                                    </p>
+                                </div>
+                                <div class="content_box_right">
+                                    <img src="img/contentBox2.png" alt="小圖片">
+                                </div>
+                            </div>
+        
+                            <div class="content_box">
+                                <div class="content_box_left">
+                                    <div class="subtittle">
+                                        <div class="subtittle_number">3</div>
+                                        <div class="subtittle_text">取得旅遊規劃書!</div>
+                                    </div>
+                                    <p class="content_box_text">
+                                        經過約定的工作日後，<br>
+                                        Bee會將旅遊規劃一次呈現給您。<br>
+                                        給予服務的Bee一份評價，<br>
+                                        然後好好享受一趟旅行吧!
+                                    </p>
+                                </div>
+                                <div class="content_box_right">
+                                    <img src="img/contentBox3.png" alt="小圖片">
+                                </div>
+                            </div>
 
-                </article>
-            </div>
+                            -->
+                            
+                        </section>
+    
+                        <div class="row justify-content-center">
+                            <div class="col col-lg-12 d-flex justify-content-center">
+                                <a href="#" class="HowToStart__btn__link"><img class="HowToStart__btn" src="img/start_btn.png" alt=""></a>
+                               <!--色塊
+                                <div class="btn_color_block"></div>  
+                                -->   
+                            </div>
+                                
+                        </div>
+    
+                    </article>
+            
             
 
             <!-- 尋找Bee區塊 -->

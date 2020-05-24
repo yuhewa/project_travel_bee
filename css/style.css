@@ -16,10 +16,6 @@ body{
     
 }
 
-.container-fluid{
-    width: 1440px;
-}
-
 
 
 header{
@@ -28,16 +24,9 @@ header{
     font-size: 0.42em;
 }
 
-
 .logo{
-    width: 331px;
-    height: 66px;
-    margin-left: 113px;
-}
-.logo_near{
-    width: 60px;
-    height: 66px;
-    margin-left:30px;
+    width: 270px;
+    height: 44px;
 }
 
 
@@ -67,14 +56,14 @@ header{
 .nav__color_block{
     position: relative;
     top: 35px;
-    width: 600px;
+    width: 100%;
     height: 30px;
     background-color: #7CC19D;
 }
 
 .nav-customized{
     background: #64B28B;
-    font-size: 0.57rem;
+    font-size: 0.51rem;
 }
 
 .navigation .nav-link{
@@ -84,7 +73,8 @@ header{
 .nav-row{
     background: #64B28B;
     height: 65px;
-    margin-bottom: 75px;
+    margin-bottom: 13px;
+    
 }
 
 .nav-tabs .nav-link {
@@ -94,13 +84,15 @@ header{
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
 
+    height: 66px;
     color: white;
 }
 
 .nav-tabs .nav-link:hover{    
-    background-color: rgb(136, 185, 167);
+    border: 1px solid transparent;
+    background-color: rgb(83, 148, 116);
     color: white;
-    border-color: rgb(136, 185, 167) rgb(136, 185, 167) rgb(136, 185, 167);
+    border-color: rgb(83, 148, 116);
 }
 
 .dropdown-menu{
@@ -117,11 +109,12 @@ ul a{
  /* font-weight: 550; */
 }
 
-
 /*去掉選單箭頭*/
 .dropdown-toggle::after {
     display:none;
 }
+
+
 
 
 a,a:hover{
@@ -129,27 +122,29 @@ a,a:hover{
     color: #474241;
 }
 
+#my-carousel{
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 39px;
+}
 
 #my-carousel .carousel-inner img {
     width: 100%;
     height: 100%;
 }
-.slide{
-    margin: 0px 0px;
 
-    width: 1047px;
-    height: 655px;
-}
 
 /*愛上Travelbee的理由*/
 .reason{
-    margin: 20px;
-    padding: 20px;
+    height: 163px;
     background-color:#F4EAC3 ;  
     z-index: 0; 
 }
 .reason p{
+    font-size: 0.85rem;
     z-index: 2;
+    margin: 0px;
 }
 /*色塊定義*/
 .reason__color_block_top{
@@ -163,6 +158,26 @@ a,a:hover{
     border-radius: 30px;
     background-color: #90D3AF;
 }
+
+
+.reason__pro__col{
+    background-color: #5AB791;
+    border-radius: 10px;
+    height: 53px;
+    color: white;
+    z-index: 50;
+}
+
+
+.reason__icon{
+    width: 28px;
+    height: 28px;
+}
+.reason__text{
+    font-size: 0.45rem;
+}
+
+/*色塊定義*/
 .reason__color_block_bottom{
     width: 1330px;
     height: 50px;
@@ -170,22 +185,10 @@ a,a:hover{
     left: 10px;
     top: -40px;
 
-    z-index: 1;
+    z-index: 0;
     border-radius: 30px;
     background-color: #419E76;
 }
-.reason__row{
-    background-color: #5AB791;
-    color: white;
-    border-radius: 20px;
-    z-index: 2;
-}
-
-.reason__icon{
-    width: 50px;
-    height: 50px;
-}
-
 
 
 /*色塊定義*/
@@ -204,22 +207,15 @@ a,a:hover{
 
 /*如何開始區塊*/
 
-.HowToStart{
-    width: 1440px;
-}
-
 /*如何開始 Tittle的部分*/
 .HowToStart__tittle , .FindBee__tittle , .BecomeBee__tittle{
-    display: flex;
     margin: 10px;
-    
     margin-top: 80px;
     margin-bottom: 30px;
 }
 .HowToStart__tittle img , .FindBee__tittle img , .BecomeBee__tittle img{
     width:80px ;
     height:80px ;
-    align-self: center;
 }
 .HowToStart__tittle .tittle_text{
     margin-left: 5px;
@@ -231,8 +227,8 @@ a,a:hover{
 
 /*subtittle的font-size: 0.71rem;*/
 .subtittle_number{
-    width: 100px;
-    height: 100px;
+    width: 99px;
+    height: 99px;
 
     color: white;
     border:1px solid #419E76;
@@ -240,10 +236,11 @@ a,a:hover{
     background-color: #419E76;
 }
 
+/*
 .subtittle_text{
     margin-left: 0px;
 }
-
+*/
 .content_box_text{
     font-size: 0.57rem;
     margin-top: 0px;
@@ -392,3 +389,6 @@ a,a:hover{
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); 
 }
     
+
+
+
