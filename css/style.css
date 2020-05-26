@@ -227,8 +227,10 @@ a,a:hover{
 
 /*subtittle的font-size: 0.71rem;*/
 .subtittle_number{
-    width: 99px;
-    height: 99px;
+    
+    width: 100%;
+    height: 98px;
+    max-width: 100px;
 
     color: white;
     border:1px solid #419E76;
@@ -241,6 +243,12 @@ a,a:hover{
     margin-left: 0px;
 }
 */
+
+.content__box{
+    max-width: 1100px;
+
+}
+
 .content_box_text{
     font-size: 0.57rem;
     margin-top: 0px;
@@ -251,8 +259,8 @@ a,a:hover{
     align-self: center;
 }
 .content_box_right img{
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: 100%;
 }
 
 .HowToStart__btn__link:hover .HowToStart__btn{
@@ -295,14 +303,19 @@ a,a:hover{
 
 
 .BecomeBee__pros{
+    max-width: 1100px;
+    
     padding: 40px;
     margin-bottom: 100px;
 
     background-color: #F4EAC3;
+    
 }
 .pro{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
+
+    max-width:300px;
 }
 
 
