@@ -61,21 +61,29 @@ header{
     background-color: #7CC19D;
 }
 
+.nav-row{
+    background: #64B28B;
+    height: 65px;
+    margin-bottom: 26px;
+   
+}
+
 .nav-customized{
     background: #64B28B;
     font-size: 0.51rem;
+
 }
 
 .navigation .nav-link{
     padding:0px; 
     line-height: 65px;
 }
-.nav-row{
-    background: #64B28B;
-    height: 65px;
-    margin-bottom: 13px;
-    
+
+.nav .nav-item{
+    padding:0px 5px ;
 }
+
+
 
 .nav-tabs .nav-link {
     border: 1px solid transparent;
@@ -394,4 +402,66 @@ a,a:hover{
     
 
 
+/*字體大小動態變化 */
+/*
+小於max會改變
+@media screen and (max-width: px) {
+    html{
+        font-size: pt;
+    }
+    nav-row{
+        height: px;
+        margin: px;
+    }
+}
 
+*/
+
+
+
+@media screen and (max-width: 1440px) {
+    html{
+        font-size: 30pt;
+    }
+
+    .nav-row{
+        height: 56px;
+    }
+
+}
+@media screen and (max-width: 1140px) {
+    html{
+        font-size: 24pt;
+    }
+
+    .nav-row{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    html{
+        font-size: 23pt;
+    }
+    nav-row{
+        height: 52px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 22pt;
+    }
+    nav-row{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 21pt;
+    }
+    nav-row{
+        height: 48px;
+    }
+}
