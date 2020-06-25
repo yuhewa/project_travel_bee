@@ -9,20 +9,11 @@ body{
     display: flex;
     justify-content: center;
 
-    font-family: Microsoft JhengHei;
+    font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
    /* font-weight: 550; */
     color: #474241;
-}
-
-.icon{
-    width: 29px;
-    height: 29px;
-}
-
-
-.container-fluid{
-    width: 1280px;
-    margin: 0px;
+    scrollbar-color: #d4fc79 #F5F5F5;
+    
 }
 
 
@@ -33,31 +24,22 @@ header{
     font-size: 0.42em;
 }
 
-
 .logo{
-    width: 331px;
-    height: 66px;
-    margin-left: 113px;
-}
-.logo_near{
-    width: 60px;
-    height: 66px;
-    margin-left:30px;
+    width: 270px;
+    height: 44px;
 }
 
 
 .header__right{
-    margin-right: 122px;
+    margin-right: 20px;
 
 }
-
 
 .icon{
     margin-left: 10px;
-
+    width: 29px;
+    height: 29px;
 }
-
-
 
 .header__search{
     width: 82px;
@@ -69,23 +51,99 @@ header{
 
 
 
+nav{
+    background-color:#64B28B ;
+    font-size: 0.45rem;
 
+    margin-bottom: 10px;
+}
+
+/* 調整navbar的高度 */
+.navbar{
+    padding:6px 15px;
+}
+/* 調整選項高度 */
+.nav-link{
+    padding:10px 8px;
+}
+
+.navbar-toggler img{
+	width: 39px;
+	height: 34px;
+}
+.nav-item > a{
+    color:#FFFEF8;
+}
+.nav-link{
+	border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.nav-link:hover{    
+    border: 1px solid transparent;
+    background-color: rgb(83, 148, 116);
+    color: white;
+    border-color: rgb(83, 148, 116);
+}
+.nav-link:focus{
+	background-color: rgb(83, 148, 116);
+}
+/*去掉選單箭頭*/
+nav .dropdown-toggle::after {
+    display:none;
+}
+
+.dropdown-menu a{
+    color: gray;
+    font-size: 0.45rem;
+}
+
+.nav__color_block{
+    height: 30px;
+    background-color: #6cc297;
+
+    position: relative;
+    left: -30px;
+    bottom: -13px;
+}
+
+/*用來消除按鈕的紅色外框線條*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* nav的廢棄設定
+.nav__color_block{
+    position: relative;
+    top: 35px;
+    width: 100%;
+    height: 30px;
+    background-color: #7CC19D;
+}
+
+.nav-row{
+    background: #64B28B;
+    height: 65px;
+    margin-bottom: 26px;  
+}
 
 .nav-customized{
-    background: #9CD3BE;
-    font-size: 0.57rem;
+    background: #64B28B;
+    font-size: 0.51rem;
+
 }
-
-
 
 .navigation .nav-link{
-    padding-left:41.5px ;
-    padding-right:41.5px ;
+    padding:0px; 
+    line-height: 65px;
 }
-.nav-row{
-    background: #9CD3BE;
-    height: 95px;
-    margin-bottom: 75px;
+
+.nav .nav-item{
+    padding:0px 5px ;
 }
 
 .nav-tabs .nav-link {
@@ -94,12 +152,16 @@ header{
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
-  }
+
+    height: 66px;
+    color: white;
+}
 
 .nav-tabs .nav-link:hover{    
-    background-color: rgb(136, 185, 167);
-    color: #474241;
-    border-color: rgb(136, 185, 167) rgb(136, 185, 167) rgb(136, 185, 167);
+    border: 1px solid transparent;
+    background-color: rgb(83, 148, 116);
+    color: white;
+    border-color: rgb(83, 148, 116);
 }
 
 .dropdown-menu{
@@ -111,41 +173,12 @@ header{
    background-color: #9CD3BE;
 }
 ul a{
-  color: #474241;
-  font-family: Microsoft JhengHei;
-  font-weight: 550;
+    color: #474241;
 }
-
-
-/*下面用來去掉選單箭頭*/
-.dropdown-toggle::after {
-    display:none;
-}
-
-
-/*封存
-nav{
-    margin: 0px;
-}
-nav ul{
-    margin:0px;
-    width: 100%;
-    padding:0px 0px;  
-}
-nav li{
-    min-width: 264px;
-}
-nav a{
-    padding: 10px 60px;
-    margin: 0px 0px;
-}
-nav li:hover a {
-	background: rgb(140, 189, 170);
-}
-
 */
-
-
+header a{
+    color: #474241;
+}
 
 a,a:hover{
     text-decoration:none;
@@ -153,109 +186,147 @@ a,a:hover{
 }
 
 
+
+#my-carousel{
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 39px;
+}
+
 #my-carousel .carousel-inner img {
     width: 100%;
     height: 100%;
 }
 
 
-.slide{
-    margin: 0px 0px;
+/*愛上Travelbee的理由*/
+.reason{
+    height: 163px;
+    background-color:#F4EAC3 ;  
+    z-index: 0; 
+}
+.reason p{
+    font-size: 0.85rem;
+    z-index: 2;
+    margin: 0px;
+}
+/*色塊定義*/
+.reason__color_block_top{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    left: -350px;
+    top: 30px;
 
-    width: 1047px;
-    height: 655px;
+    z-index: 1;
+    border-radius: 30px;
+    background-color: #90D3AF;
 }
 
 
+.reason__pro__col{
+    background-color: #5AB791;
+    border-radius: 10px;
+    height: 53px;
+    color: white;
+    z-index: 50;
+}
 
 
-/*Tittle的部分*/
+.reason__icon{
+    width: 28px;
+    height: 28px;
+}
+.reason__text{
+    font-size: 0.45rem;
+}
+
+/*色塊定義*/
+.reason__color_block_bottom{
+    width: 1330px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    top: -40px;
+
+    z-index: 0;
+    border-radius: 30px;
+    background-color: #419E76;
+}
+
+
+/*色塊定義*/
+.color_block{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    left: -190px;
+    top: 30px;
+
+
+    z-index: -1;
+    border-radius: 30px;
+    background-color: #90D3AF;
+}
+
+/*如何開始區塊*/
+
+/*如何開始 Tittle的部分*/
 .HowToStart__tittle , .FindBee__tittle , .BecomeBee__tittle{
-    display: flex;
     margin: 10px;
-    
-    width: 1280px;
-    height: 160px;
-    background: #9CD3BE;
-    padding-left: 150px;
-    
-    margin-top: 75px;
-    margin-bottom: 143px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 .HowToStart__tittle img , .FindBee__tittle img , .BecomeBee__tittle img{
-    width:105px ;
-    height:105px ;
-    align-self: center;
-
+    width:80px ;
+    height:80px ;
 }
-.tittle_text{
-    margin-left: 35px;
-
+.HowToStart__tittle .tittle_text{
+    margin-left: 5px;
     font-size: 1em;
-    line-height: 160px;
-    min-width: 335px;
-    
     font-weight: 550;
 }
 
+/*內容部分*/
 
-
-
-
-.content_box{
-    display: flex;
-    justify-content: center;
-
-    
-    margin: 100px;
-}
-
-
-.subtittle{
-    display: flex;
-    font-size: 0.71rem;
-    
-    align-items:center ;
-}
+/*subtittle的font-size: 0.71rem;*/
 .subtittle_number{
     
-    height: 60px;
-    line-height: 60px;
-    border:1px solid #9CD3BE;
+    width: 100%;
+    height: 98px;
+    max-width: 100px;
+
+    color: white;
+    border:1px solid #419E76;
     border-radius: 20px;
-    
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    background-color: #9CD3BE;
-    
+    background-color: #419E76;
 }
+
+/*
 .subtittle_text{
-    margin-left: 15px;
+    margin-left: 0px;
+}
+*/
+
+.content__box{
+    max-width: 1100px;
+
 }
 
-
-.content_box_left{
-
-    min-width: 417px;
-    height: 194px;
-}
 .content_box_text{
     font-size: 0.57rem;
-    margin-top: 21px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
-
 .content_box_right{
     align-self: center;
-    margin-left: 75px;
 }
 .content_box_right img{
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: 100%;
 }
-
 
 .HowToStart__btn__link:hover .HowToStart__btn{
     filter: brightness(80%);
@@ -264,9 +335,27 @@ a,a:hover{
 
 .HowToStart__btn{
     margin: 20px;
-    width: 615px;
-    height: 166px;
+    width: 100%;
+    
 }
+
+/*大按鈕的陰影色塊*/
+/*色塊定義*/
+.btn_color_block{
+    width: 615px;
+    height: 165px;
+    position: relative;
+    left: 30px;
+    top: -150px;
+
+
+    z-index: -1;
+    border-radius: 30px;
+    background-color: #419E76;
+}
+
+
+
 
 
 .FindBee__text{
@@ -279,23 +368,20 @@ a,a:hover{
 
 
 .BecomeBee__pros{
+    max-width: 1100px;
+    
+    padding: 40px;
     margin-bottom: 100px;
+
+    background-color: #F4EAC3;
+    
 }
 
-.BecomeBee__pros .pro1{
-    width: 212px;
-    height: 189px;
-    margin:20px 0px;
-}
-.BecomeBee__pros .pro2{
-    width: 175px;
-    height: 186px;
-    margin:20px 0px;
-}
-.BecomeBee__pros .pro3{
-    width: 130px;
-    height: 187px;
-    margin:20px 0px;
+.pro{
+    width: 100%;
+    height: 100%;
+
+    max-width:300px;
 }
 
 
@@ -304,38 +390,135 @@ a,a:hover{
 .footer{
     margin-top: 126px;
     height: 126px;
-    
 }
 
 .footer ul{
     list-style:none;
     background: #9CD3BE;
-
-    margin:0px;
-    padding:0px 0px;
-
     
     width: 100%;
     height: 126px;
-    
     font-size: 0.57rem;
 }
 
 .footer .nav-link{
-    width:158.3px;
-    padding-left:22.5px ;
-    padding-right:22.5px ;
-}
-
-.footer__text{
-    width: 158.3px;
-
+    width:100%;
+    
+    color: black;
 }
 
 .footer .footer_text:hover a {
-	background: rgb(140, 189, 170);
+	background: rgb(3, 5, 4);
 }
 
 
 
+/*Top按鈕*/
+.gotop {
+    position:fixed;
+    z-index:90;
+    right:30px;
+    bottom:31px;
+    display:none;
+    width:50px;
+    height:50px;
+    color:#fff;
+    background:#9CD3BE;
+    line-height:50px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.gotop :hover{
+    background:rgb(85, 138, 117);
+}
 
+
+
+/*scrollbar*/
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; 
+}
+    
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; 
+}
+    
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); 
+}
+    
+
+
+/*字體大小動態變化 */
+/*
+小於max會改變
+@media screen and (max-width: px) {
+    html{
+        font-size: pt;
+    }
+    nav-row{
+        height: px;
+        margin: px;
+    }
+}
+
+*/
+
+
+
+@media screen and (max-width: 1440px) {
+    html{
+        font-size: 30pt;
+    }
+
+    .nav-row{
+        height: 56px;
+    }
+
+}
+@media screen and (max-width: 1140px) {
+    html{
+        font-size: 24pt;
+    }
+
+    .nav-row{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    html{
+        font-size: 23pt;
+    }
+    nav-row{
+        height: 52px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 22pt;
+    }
+    nav-row{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 21pt;
+    }
+    nav-row{
+        height: 48px;
+    }
+}
