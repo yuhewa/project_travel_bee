@@ -16,6 +16,9 @@ body{
     
 }
 
+.container-fluid{
+    max-width: 2000px !important; 
+}
 
 
 header{
