@@ -28,23 +28,17 @@ header{
     width: 270px;
     height: 44px;
 }
-
-
 .header__right{
     margin-right: 20px;
-
 }
-
 .icon{
     margin-left: 10px;
     width: 29px;
     height: 29px;
 }
-
 .header__search{
     width: 82px;
     margin:0px 10px ;
-
 }
 
 
@@ -521,4 +515,12 @@ a,a:hover{
     nav-row{
         height: 48px;
     }
+}
+
+/* for animated */
+.hide{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
 }
