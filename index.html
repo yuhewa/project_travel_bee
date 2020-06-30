@@ -41,9 +41,9 @@
         </header>
 
         <!-- nav  下拉式選單 -->
-        <nav class="navbar navbar-expand-lg navbar-dark row">
+        <nav class="navbar navbar-expand-xl navbar-dark row">
 
-            <div class="col-10 col-lg-6">
+            <div class="col-10 col-xl-6">
                 <div class="nav__color_block"></div>
             </div>
 
@@ -54,7 +54,7 @@
                 <img src="img/hamburger.png" alt="">
             </button>
             <!-- 選單內容 -->
-            <div class="collapse navbar-collapse ml-auto " id="navbarSupportedContent">
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle d-flex justify-content-center" href="#" id="navbarDropdown"
@@ -112,7 +112,7 @@
         <main>
             <!-- Carousel 滑動區塊-->
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 noPadding">
                     <div id="my-carousel" class="carousel slide " data-ride="carousel">
                         <!-- slide下按鈕 -->
                         <ol class="carousel-indicators">
@@ -151,31 +151,32 @@
 
             <!-- 為什麼選擇Travel的區塊-->
             <div class="row reason">
-                <div class="col-12">
+                <div class="col-12 align-self-center">
                     <div class="row reason__tittle justify-content-center">
                         <div class="col-6 d-flex justify-content-center">
                             <p>3個愛上Travelbee的理由</p>
                         </div>
-                        <!--色塊
-                               <div class="reason__color_block_top"></div> 
-                            -->
+
+                        <!-- <div class="reason__color_block_top"></div> -->
+
                     </div>
 
                     <div class="row reason__pro justify-content-center">
-                        <div class="col col-lg-8 col-md-12 reason__pro__col d-flex justify-content-center">
-                            <div class="row w-100 align-content-center">
+                        <div class="reason__pro__col d-flex justify-content-center">
+                            <div class="d-flex w-100 justify-content-center align-content-center when800">
 
-                                <div class="col d-flex justify-content-center">
+
+                                <div class="d-flex justify-content-center align-items-center">
                                     <img src="img/why_love_1.png" alt="icon" class="reason__icon">
                                     <div class="reason__text">節省您的規劃時間</div>
                                 </div>
 
-                                <div class="col d-flex justify-content-center">
-                                    <img src="img/why_love_2.png" alt="icon" class="reason__icon">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/why_love_2.png" alt="icon" class="reason__icon" id="reason__icon2">
                                     <div class="reason__text">依需求客製行程</div>
                                 </div>
 
-                                <div class="col d-flex justify-content-center">
+                                <div class="d-flex justify-content-center align-items-center">
                                     <img src="img/why_love_3.png" alt="icon" class="reason__icon">
                                     <div class="reason__text">任選優質Bee</div>
                                 </div>
@@ -194,7 +195,7 @@
             <article class="HowToStart">
                 <!--標題-->
                 <div class="row justify-content-center">
-                    <div class="col col-12 d-flex justify-content-center HowToStart__tittle">
+                    <div class="col col-12 d-flex justify-content-center align-items-center HowToStart__tittle">
                         <img src="img/tittleIcon.png" alt="bee_icon">
                         <div class="HowToStart__text tittle_text">如何開始?</div>
                         <!--色塊 <div class="color_block"></div>-->
@@ -204,15 +205,15 @@
                 <!--內容-->
                 <section class="HowToStart__content">
                     <div class="d-flex justify-content-center">
-                        <div class="row content__box justify-content-center hide animate__animated" id="content__box1">
+                        <div class="row content__box justify-content-around hide animate__animated" id="content__box1">
 
-                            <div class="col-2 align-self-center">
+                            <div class="col-2 col-md-1 order-1 order-md-1 align-self-center">
                                 <div class="subtittle_number d-flex justify-content-center align-items-center">
                                     1
                                 </div>
                             </div>
 
-                            <div class="col-5">
+                            <div class="col-7 col-md-5 offset-1 offset-md-1 order-md-2 order-3">
                                 <div class="subtittle_text">提供需求</div>
                                 <p class="content_box_text">
                                     提供您的旅遊相關需求。<br>
@@ -221,7 +222,7 @@
                                 </p>
                             </div>
 
-                            <div class="col-2 content_box_right">
+                            <div class="col-3 col-md-2 order-2 order-md-3 content_box_right">
                                 <img src="img/contentBox1.png" alt="小圖片">
                             </div>
                         </div>
@@ -306,7 +307,7 @@
                 <div class="col-12">
                     <article class="FindBee">
                         <div class="row justify-content-center">
-                            <section class="col-12 d-flex justify-content-center FindBee__tittle ">
+                            <section class="col-12 d-flex justify-content-center align-items-center FindBee__tittle ">
                                 <img src="img/tittleIcon.png" alt="bee_icon">
                                 <div class="FindBeeText__text tittle_text">尋找Bee</div>
                             </section>
@@ -367,7 +368,7 @@
             <!-- 成為Bee區塊-->
 
             <section class="row BecomeBee__tittle">
-                <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center align-items-center">
                     <img src="img/tittleIcon.png" alt="bee_icon">
                     <div class="BecomeBee__text tittle_text">成為Bee</div>
                 </div>
@@ -375,7 +376,7 @@
 
 
             <div class="row">
-                <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center becomeBee__description">
                     <p>成為Bee有以下優勢:</p>
                 </div>
             </div>
@@ -383,23 +384,23 @@
             <div class="row hide animate__animated" id="becomebee">
                 <div class="col-12 d-flex justify-content-center">
                     <div class="row BecomeBee__pros justify-content-center">
-                        <div class="col col-3">
+                        <div class="col-12 col-md-3">
                             <div class="row justify-content-center">
                                 <img class="pro" src="img/pros_01.png" alt="">
-                                <p>人性化配對</p>
+                                <p class="pro__text">人性化配對</p>
                             </div>
                         </div>
 
-                        <div class="col offset-1 col-3">
+                        <div class="col-12 col-md-3 offset-1">
                             <div class="row justify-content-center">
                                 <img class="pro" src="img/pros_02.png" alt="">
-                                <p>透過知識獲利</p>
+                                <p class="pro__text">透過知識獲利</p>
                             </div>
                         </div>
-                        <div class="col offset-1 col-3">
+                        <div class="col-12 col-md-3 offset-1">
                             <div class="row justify-content-center">
                                 <img class="pro" src="img/pros_03.png" alt="">
-                                <p>累積評價知名度</p>
+                                <p class="pro__text">累積評價知名度</p>
                             </div>
                         </div>
                     </div>
