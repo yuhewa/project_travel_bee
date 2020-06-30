@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBee</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/need_style.css">
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <header class="row justify-content-between header__row">
+            <div class="col-2 d-flex">
+                <a href="#"><img class="logo" src="img/logo_bee_v2-01.png" alt="travelbee"></a>
+            </div>
+
+            <div class="col d-flex align-items-end justify-content-end header__right">
+                <a href="#" class="sign_in">Sign in</a>
+
+                <div class="header__line">｜</div>
+
+                <a class="join" href="#">Join</a>
+
+                <div class="header__line">｜</div>
+
+                <a href="#"><img class="icon fb--icon" src="img/fb_icon.png" alt="fb"></a>
+                <a href="#"><img class="icon ig--icon" src="img/ig_icon.png" alt="ig"></a>
+                <a href="#"><img class="icon search--icon" src="img/search.png" alt="search"></a>
+            </div>
+        </header>
+
+        <!-- nav  下拉式選單 -->
+        <nav class="navbar navbar-expand-lg navbar-dark row">
+
+            <div class="col-10 col-lg-6 align-self-end">
+                <div class="nav__color_block "></div>
+            </div>
+
+            <!-- 選單按鈕 -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="img/hamburger.png" alt="">
+            </button>
+            <!-- 選單內容 -->
+            <div class="collapse navbar-collapse ml-auto " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-center" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            關於我們
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #CFE5D8;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item d-flex justify-content-center" href="#">創作理念</a>
+                            <a class="dropdown-item d-flex justify-content-center" href="#">線上客服</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-center" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            選擇地區
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #CFE5D8;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item d-flex justify-content-center" href="#">北部</a>
+                            <a class="dropdown-item d-flex justify-content-center" href="#">中部</a>
+                            <a class="dropdown-item d-flex justify-content-center" href="#">南部</a>
+                            <a class="dropdown-item d-flex justify-content-center" href="#">東部</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-center" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            成為Bee
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #CFE5D8;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item d-flex justify-content-center" href="#">一步步帶領你成為Bee</a>
+                            <a class="dropdown-item d-flex justify-content-center" href="#">所需文件</a>
+                            <a class="dropdown-item d-flex justify-content-center" href="#">立即註冊</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" href="#" tabindex="-1">客製行程</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" href="#" tabindex="-1">榮譽Bee</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+    <!-- 下面為網站主體 -->
+    <div class="container">
+        <!-- 第一個表單 -->
+        <div class="row">
+
+
+            <form action="" method="GET" class="col-6 offset-1 offset-md-3">
+
+
+                <div class="tittle d-flex align-items-center">
+                    <div class="tittle__number d-flex justify-content-center">1</div>
+                    <div class="tittle__text">旅行目的</div>
+                </div>
+
+
+                <div class="1">
+                    <textarea id="purpose" name="purpose" rows="4" cols="50" placeholder="清楚說明"></textarea>
+
+                </div>
+
+
+                <div class="tittle d-flex align-items-center">
+                    <div class="tittle__number d-flex justify-content-center">2</div>
+                    <div class="tittle__text">總預算(新台幣)</div>
+                </div>
+
+
+                <label for="budget__range1" class="1">
+                    <input type="radio" id="budget__range1" name="budget__range" value="">
+                    <select name="budget__range1">
+                        <option value="">100以下</option>
+                        <option value="">100~500</option>
+                        <option value="">500~1000</option>
+                        <option value="">1000~2000</option>
+                    </select>
+                    元
+                </label>
+
+                <label for="budget__range2" class="1">
+                    <input type="radio" id="budget__range2" name="budget__range" value="">
+                    自訂金額
+                    <input type="text">
+                    元
+                </label>
+                <br>
+
+                <input type="image" src="bigbtn_02.png" width="400px" class="1">
+            </form>
+        </div>
+
+        <div class="col-12">
+            <br><br><br><br>
+        </div>
+
+
+        <!-- 第二個表單 -->
+        <form action="" method="GET" class="col-12">
+
+            <div class="tittle d-flex align-items-center">
+                <div class="tittle__number d-flex justify-content-center">3</div>
+                <div class="tittle__text">旅遊地點</div>
+            </div>
+            <div class="subtittle d-flex align-items-center">
+                <div class="subtittle__tri">▲</div>
+                <div class="subtittle__text">旅遊地域</div>
+            </div>
+
+            <label for="reigion__whatever">
+                <input type="radio" id="reigion__whatever" name="region" value="whatever">
+                不拘
+            </label>
+            <br>
+            <label for="reigion__specific">
+                <input type="radio" id="reigion__specific" name="region" value="">
+                <select name="region">
+                    <option value="taipei">臺北市</option>
+                    <option value="">新北市</option>
+                    <option value="">基隆市</option>
+                    <option value="">桃園市</option>
+                </select>
+                <input type="text" name="region">
+            </label>
+
+
+
+
+            <div class="subtittle d-flex align-items-center">
+                <div class="subtittle__tri">▲</div>
+                <div class="subtittle__text">旅程起訖點</div>
+            </div>
+            <label>
+
+                <input type="radio" id="reigion__start" name="region" value="">
+                開始起程點
+                <select name="region">
+                    <option value="taipei">臺北市</option>
+                    <option value="">新北市</option>
+                    <option value="">基隆市</option>
+                    <option value="">桃園市</option>
+                </select>
+                <input type="text" name="region">
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="reigion__end" name="region" value="">
+                結束訖程點
+                <select name="region">
+                    <option value="taipei">臺北市</option>
+                    <option value="">新北市</option>
+                    <option value="">基隆市</option>
+                    <option value="">桃園市</option>
+                </select>
+                <input type="text" name="region">
+            </label>
+
+            <div class="tittle d-flex align-items-center">
+                <div class="tittle__number d-flex justify-content-center">4</div>
+                <div class="tittle__text">旅遊者</div>
+            </div>
+            <div class="subtittle d-flex align-items-center">
+                <div class="subtittle__tri">▲</div>
+                <div class="subtittle__text">旅遊人數</div>
+            </div>
+
+            <label>
+                總共
+                <input type="text">
+                人
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="Vegetarian">
+                無素食者
+            </label>
+
+            <label>
+                <input type="radio" name="Vegetarian">
+                含素食者
+                <input type="text">
+                人
+            </label>
+
+            <div class="subtittle d-flex align-items-center">
+                <div class="subtittle__tri">▲</div>
+                <div class="subtittle__text">團體關係</div>
+            </div>
+            <label>
+                <input type="text" placeholder="情侶、同班同學...">
+            </label>
+            <br>
+            <input type="image" src="bigbtn_02.png" width="400px">
+        </form>
+
+
+
+
+
+        <div class="col-12">
+            <br><br><br><br>
+        </div>
+        <!-- 第三個表單 -->
+        <form action="" method="GET" class="col-12">
+
+            <div class="tittle d-flex align-items-center">
+                <div class="tittle__number d-flex justify-content-center">5</div>
+                <div class="tittle__text">天數</div>
+            </div>
+
+            <label for="reigion__whatever">
+                <select name="days">
+                    <option value="1day">1日遊</option>
+                    <option value="">2日遊</option>
+                    <option value="">3日遊</option>
+                    <option value="">4日遊</option>
+                </select>
+            </label>
+
+
+
+            <br>
+
+            <div class="tittle d-flex align-items-center">
+                <div class="tittle__number d-flex justify-content-center">6</div>
+                <div class="tittle__text">住宿</div>
+            </div>
+
+            <div class="subtittle d-flex align-items-center">
+                <div class="subtittle__tri">▲</div>
+                <div class="subtittle__text">住宿等級</div>
+            </div>
+
+            <label>
+                <input type="radio" name="room__grade">
+                不拘
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="room__grade">
+                <select name="room__grade">
+                    <option value="1star">一星級</option>
+                    <option value="">二星級</option>
+                    <option value="">三星級</option>
+                    <option value="">四星級</option>
+                </select>
+            </label>
+
+            <div class="subtittle d-flex align-items-center">
+                <div class="subtittle__tri">▲</div>
+                <div class="subtittle__text">其他住宿要求</div>
+            </div>
+            <textarea name="room__request" cols="60" rows="3" placeholder="提供無線網路網路、寵物空間等等..."></textarea>
+            <br>
+            <input type="image" src="/bigbtn_02.png" width="400px">
+        </form>
+
+    </div>
+    </div>
+</body>
+
+</html>
