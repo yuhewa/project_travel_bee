@@ -9,21 +9,27 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/need_style.css">
+    
 
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
     <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/need_js.js"></script>
 
 </head>
 
 <body>
+
+
     <div class="container-fluid">
 
 
         <header class="row justify-content-between header__row">
             <div class="col-2 d-flex">
-                <a href="#"><img class="logo" src="img/logo_bee_v2-01.png" alt="travelbee"></a>
+                <a href="index.html"><img class="logo" src="img/logo_bee_v2-01.png" alt="travelbee"></a>
             </div>
 
             <div class="col d-flex align-items-end justify-content-end header__right">
@@ -57,16 +63,8 @@
             <!-- 選單內容 -->
             <div class="collapse navbar-collapse ml-auto " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex justify-content-center" href="#" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            關於我們
-                        </a>
-                        <div class="dropdown-menu" style="background-color: #CFE5D8;" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item d-flex justify-content-center" href="#">創作理念</a>
-                            <a class="dropdown-item d-flex justify-content-center" href="#">線上客服</a>
-
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" href="aboutus.html" tabindex="-1">關於我們</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -106,19 +104,32 @@
                 </ul>
             </div>
         </nav>
+
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="banner__block d-flex justify-content-center align-items-center">
+                        <p class="text-center">
+                            <span class="banner__block__title"><b>旅遊需求客製單</b></span><br>
+                            <span class="banner__block__text">讓我們知悉您的規劃要求</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
-
-
-    <!-- 下面為網站主體 -->
-    <div class="container">
+    <div class="container-fluid">
+        <!-- 下面為網站主體 -->
         <!-- 第一個表單 -->
         <div class="row">
 
 
-            <form action="" method="GET" class="col-6 offset-1 offset-md-3">
+            <form action="" method="GET" class="col-7 offset-3">
 
 
                 <div class="tittle d-flex align-items-center">
@@ -128,7 +139,9 @@
 
 
                 <div class="1">
-                    <textarea id="purpose" name="purpose" rows="4" cols="50" placeholder="清楚說明"></textarea>
+                    <textarea id="purpose" name="purpose" rows="4" cols="50" data-action="purpose" placeholder="清楚說明旅行目的，以便讓Bee替您規劃最適合行程!
+舉例1:情侶想在有大自然景觀的民宿中休息紓壓
+舉例2:小家庭想到台北看展覽然後晚上要逛夜市"></textarea>
 
                 </div>
 
@@ -140,35 +153,35 @@
 
 
                 <label for="budget__range1" class="1">
-                    <input type="radio" id="budget__range1" name="budget__range" value="">
-                    <select name="budget__range1">
-                        <option value="">100以下</option>
-                        <option value="">100~500</option>
+                    <input type="radio" id="budget__range1" name="budget__range" value="money1" data-action="money1_1">
+                    <select name="budget__range1" data-action="money1_2">
+                        <option value="100以下">100以下</option>
+                        <option value="100~500">100~500</option>
                         <option value="">500~1000</option>
                         <option value="">1000~2000</option>
+                        <option value="">2000~3000</option>
+                        <option value="">3000~5000</option>
+                        <option value="">5000~8000</option>
+                        <option value="">8000以上</option>
                     </select>
                     元
                 </label>
 
-                <label for="budget__range2" class="1">
-                    <input type="radio" id="budget__range2" name="budget__range" value="">
+                <label for="budget__range2" class="1" data-action="money2">
+                    <input type="radio" id="budget__range2" name="budget__range" value="money2" data-action="money2">
                     自訂金額
-                    <input type="text">
+                    <input type="text" data-action="money">
                     元
                 </label>
                 <br>
 
-                <input type="image" src="bigbtn_02.png" width="400px" class="1">
             </form>
         </div>
 
-        <div class="col-12">
-            <br><br><br><br>
-        </div>
 
 
         <!-- 第二個表單 -->
-        <form action="" method="GET" class="col-12">
+        <form action="" method="GET" class="col-7 offset-3">
 
             <div class="tittle d-flex align-items-center">
                 <div class="tittle__number d-flex justify-content-center">3</div>
@@ -180,19 +193,36 @@
             </div>
 
             <label for="reigion__whatever">
-                <input type="radio" id="reigion__whatever" name="region" value="whatever">
+                <input type="radio" id="reigion__whatever" name="region" value="whatever" data-action="region1">
                 不拘
             </label>
             <br>
             <label for="reigion__specific">
-                <input type="radio" id="reigion__specific" name="region" value="">
+                <input type="radio" id="reigion__specific" name="region" value="" data-action="region1">
                 <select name="region">
-                    <option value="taipei">臺北市</option>
-                    <option value="">新北市</option>
-                    <option value="">基隆市</option>
-                    <option value="">桃園市</option>
+                    <option value="臺北市">臺北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="新竹縣">新竹縣</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="臺中市">臺中市</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="嘉義市">嘉義市</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="台南市">台南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="台東縣">台東縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                    <option value="其他">其他</option>
                 </select>
-                <input type="text" name="region">
+                <input type="text" name="region" data-action="region">
             </label>
 
 
@@ -204,27 +234,62 @@
             </div>
             <label>
 
-                <input type="radio" id="reigion__start" name="region" value="">
+                <input type="radio" id="reigion__start" name="region" value="" data-action="begin">
                 開始起程點
                 <select name="region">
-                    <option value="taipei">臺北市</option>
-                    <option value="">新北市</option>
-                    <option value="">基隆市</option>
-                    <option value="">桃園市</option>
+                    <option value="臺北市">臺北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="新竹縣">新竹縣</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="臺中市">臺中市</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="嘉義市">嘉義市</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="台南市">台南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="台東縣">台東縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                    <option value="其他">其他</option>
                 </select>
-                <input type="text" name="region">
+                <input type="text" name="region" data-action="start"> 
+
             </label>
             <br>
             <label>
-                <input type="radio" id="reigion__end" name="region" value="">
+                <input type="radio" id="reigion__end" name="region" value="" data-action="end">
                 結束訖程點
                 <select name="region">
-                    <option value="taipei">臺北市</option>
-                    <option value="">新北市</option>
-                    <option value="">基隆市</option>
-                    <option value="">桃園市</option>
+                    <option value="臺北市">臺北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="新竹縣">新竹縣</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="臺中市">臺中市</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="嘉義市">嘉義市</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="台南市">台南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="台東縣">台東縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                    <option value="其他">其他</option>
                 </select>
-                <input type="text" name="region">
+                <input type="text" name="region" data-action="end">
             </label>
 
             <div class="tittle d-flex align-items-center">
@@ -238,19 +303,19 @@
 
             <label>
                 總共
-                <input type="text">
+                <input type="text" data-action="people">
                 人
             </label>
             <br>
             <label>
-                <input type="radio" name="Vegetarian">
+                <input type="radio" name="Vegetarian" data-action="vegetarian">
                 無素食者
             </label>
 
             <label>
-                <input type="radio" name="Vegetarian">
+                <input type="radio" name="Vegetarian" data-action="vegetarian">
                 含素食者
-                <input type="text">
+                <input type="text" data-action="vegetarian">
                 人
             </label>
 
@@ -259,21 +324,18 @@
                 <div class="subtittle__text">團體關係</div>
             </div>
             <label>
-                <input type="text" placeholder="情侶、同班同學...">
+                <input type="text" placeholder="情侶、同班同學..." data-action="group">
             </label>
             <br>
-            <input type="image" src="bigbtn_02.png" width="400px">
+
         </form>
 
 
 
 
 
-        <div class="col-12">
-            <br><br><br><br>
-        </div>
         <!-- 第三個表單 -->
-        <form action="" method="GET" class="col-12">
+        <form action="" method="GET" class="col-7 offset-3">
 
             <div class="tittle d-flex align-items-center">
                 <div class="tittle__number d-flex justify-content-center">5</div>
@@ -281,7 +343,7 @@
             </div>
 
             <label for="reigion__whatever">
-                <select name="days">
+                <select name="days" data-action="day">
                     <option value="1day">1日遊</option>
                     <option value="">2日遊</option>
                     <option value="">3日遊</option>
@@ -304,17 +366,19 @@
             </div>
 
             <label>
-                <input type="radio" name="room__grade">
+                <input type="radio" name="room__grade" data-action="grade">
                 不拘
             </label>
             <br>
             <label>
-                <input type="radio" name="room__grade">
+                <input type="radio" name="room__grade" data-action="grade">
                 <select name="room__grade">
                     <option value="1star">一星級</option>
                     <option value="">二星級</option>
                     <option value="">三星級</option>
                     <option value="">四星級</option>
+                    <option value="">五星級</option>
+                    <option value="">其他</option>
                 </select>
             </label>
 
@@ -322,10 +386,14 @@
                 <div class="subtittle__tri">▲</div>
                 <div class="subtittle__text">其他住宿要求</div>
             </div>
-            <textarea name="room__request" cols="60" rows="3" placeholder="提供無線網路網路、寵物空間等等..."></textarea>
+            <textarea name="room__request" cols="60" rows="3" placeholder="提供無線網路網路、寵物空間等等..." data-action="request"></textarea>
             <br>
-            <input type="image" src="/bigbtn_02.png" width="400px">
         </form>
+
+        <div class="col-7 offset-2 d-flex justify-content-center">
+            <input class="submit_button"  type="image" src="/img/need_submit.png" width="300mm" onclick="need()">
+        </div>
+          
 
     </div>
     </div>

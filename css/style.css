@@ -115,11 +115,16 @@ nav .dropdown-toggle::after {
 /*用來消除按鈕的紅色外框線條*/
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus {
+.navbar-toggler-icon:focus,
+.nav-link {
     outline: none;
     box-shadow: none;
 }
 
+
+.nav-item{
+    border: none;
+}
 
 
 .nav-item a{
@@ -285,6 +290,9 @@ a,a:hover{
 }
 
 
+
+
+
 /*色塊定義*/
 .color_block{
     width: 200px;
@@ -404,9 +412,9 @@ a,a:hover{
 
 
 .BecomeBee__pros{
-    max-width: 1100px;
+    max-width: 750px;
     
-    font-size: 0.57rem;
+    font-size: 0.5rem;
     padding: 22px 40px;
     margin-bottom: 100px;
 
@@ -427,7 +435,6 @@ a,a:hover{
 
 .pro__text{
     margin-bottom: 0px;
-    line-height: 184px;
 }
 
 
@@ -502,10 +509,82 @@ a,a:hover{
 }
     
 
+/* RWD */
 
-/* @media screen and (min-width: 800px) {
+@media screen and (max-width: 1290px) {
+    .footer ul{
+        font-size: 0.5rem;
+    }
+}
 
-} */
+@media screen and (max-width: 940px) {
+    .when800_footer{
+        height: 400px !important;
+    }
+    .footer__icon__box{
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .header__right{
+        opacity: 0;
+    }
+    .when800_reason{
+        height: 150px;
+    }
+    .when800_reason .reason__box{
+        margin-bottom: 7px;
+    }
+
+    .content_box_text{
+        font-size: 0.5rem;
+
+    }
+    /* 一樣沒辦法對齊 
+    .reason__box{
+        justify-content: start !important;
+        padding-left: 200px;
+    } */
+
+    .becomebee__box{
+        /* width: 350px; */
+        margin-bottom: 10px;
+        justify-content: start !important;
+        padding-left:70px;
+    }
+    .becomebee__box1{
+        padding-left: 25%;
+    }
+
+    .when800_footer{
+        height: 400px !important;
+    }
+    .footer__icon__box{
+        justify-content:center;
+    }
+}
+
+
+
+@media screen and (max-width: 465px) {
+    .reason p{
+        font-size: 0.6rem;
+        z-index: 2;
+        margin: 0px;
+        font-weight: 700;
+        min-width: 320px;
+    }
+    .content_box_text{
+        font-size: 0.5rem;
+        min-width: 280px;
+    }
+
+    .pro__text{
+        margin-left: 5%;
+    }
+}
 
 
 /*字體大小動態變化 */

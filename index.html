@@ -14,7 +14,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/debug.addIndicators.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js/index_js.js"></script>
 </head>
 
 <body>
@@ -56,16 +56,8 @@
             <!-- 選單內容 -->
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex justify-content-center" href="#" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            關於我們
-                        </a>
-                        <div class="dropdown-menu" style="background-color: #CFE5D8;" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item d-flex justify-content-center" href="#">創作理念</a>
-                            <a class="dropdown-item d-flex justify-content-center" href="#">線上客服</a>
-
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" href="aboutus.html" tabindex="-1">關於我們</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -162,21 +154,22 @@
                     </div>
 
                     <div class="row reason__pro justify-content-center">
-                        <div class="reason__pro__col d-flex justify-content-center">
-                            <div class="d-flex w-100 justify-content-center align-content-center when800">
-
-
-                                <div class="d-flex justify-content-center align-items-center">
+                        <div class="reason__pro__col d-flex justify-content-center when800_reason">
+                            <div class="row d-flex w-100 justify-content-center align-content-center">
+                                <div
+                                    class="col-12 col-md-4 d-flex justify-content-center align-items-center reason__box">
                                     <img src="img/why_love_1.png" alt="icon" class="reason__icon">
                                     <div class="reason__text">節省您的規劃時間</div>
                                 </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div
+                                    class="col-12 col-md-4 d-flex justify-content-center align-items-center reason__box">
                                     <img src="img/why_love_2.png" alt="icon" class="reason__icon" id="reason__icon2">
                                     <div class="reason__text">依需求客製行程</div>
                                 </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div
+                                    class="col-12 col-md-4 d-flex justify-content-center align-items-center reason__box">
                                     <img src="img/why_love_3.png" alt="icon" class="reason__icon">
                                     <div class="reason__text">任選優質Bee</div>
                                 </div>
@@ -205,15 +198,15 @@
                 <!--內容-->
                 <section class="HowToStart__content">
                     <div class="d-flex justify-content-center">
-                        <div class="row content__box justify-content-around hide animate__animated" id="content__box1">
+                        <div class="row content__box justify-content-center hide animate__animated" id="content__box1">
 
-                            <div class="col-2 col-md-1 order-1 order-md-1 align-self-center">
+                            <div class="col-4 col-md-2 order-1 order-md-1 align-self-center">
                                 <div class="subtittle_number d-flex justify-content-center align-items-center">
                                     1
                                 </div>
                             </div>
 
-                            <div class="col-7 col-md-5 offset-1 offset-md-1 order-md-2 order-3">
+                            <div class="col-7 col-md-5 order-md-2 order-3">
                                 <div class="subtittle_text">提供需求</div>
                                 <p class="content_box_text">
                                     提供您的旅遊相關需求。<br>
@@ -233,13 +226,13 @@
                     <div class="d-flex justify-content-center">
                         <div class="row content__box justify-content-center hide animate__animated" id="content__box2">
 
-                            <div class="col-2 align-self-center">
+                            <div class="col-4 col-md-2 order-1 order-md-1 align-self-center">
                                 <div class="subtittle_number d-flex justify-content-center align-items-center">
                                     2
                                 </div>
                             </div>
 
-                            <div class="col-5">
+                            <div class="col-7 col-md-5 order-md-2 order-3">
                                 <div class="subtittle_text">Bee規劃批准</div>
                                 <p class="content_box_text">
                                     當有Bee注意到您的需求單，<br>
@@ -248,7 +241,7 @@
                                 </p>
                             </div>
 
-                            <div class="col-2 content_box_right">
+                            <div class="col-3 col-md-2 order-2 order-md-3 content_box_right">
                                 <img src="img/contentBox2.png" alt="小圖片">
                             </div>
                         </div>
@@ -259,13 +252,13 @@
                     <div class="d-flex justify-content-center">
                         <div class="row content__box justify-content-center hide animate__animated" id="content__box3">
 
-                            <div class="col-2 align-self-center">
+                            <div class="col-4 col-md-2 order-1 order-md-1 align-self-center">
                                 <div class="subtittle_number d-flex justify-content-center align-items-center">
                                     3
                                 </div>
                             </div>
 
-                            <div class="col-5">
+                            <div class="col-7 col-md-5 order-md-2 order-3">
                                 <div class="subtittle_text">取得旅遊規劃書!</div>
                                 <p class="content_box_text">
                                     經過約定的工作日後，<br>
@@ -275,7 +268,7 @@
                                 </p>
                             </div>
 
-                            <div class="col-2 content_box_right">
+                            <div class="col-3 col-md-2 order-2 order-md-3 content_box_right">
                                 <img src="img/contentBox3.png" alt="小圖片">
                             </div>
                         </div>
@@ -289,7 +282,7 @@
                 <div class="btn_toggler1"></div>
                 <div class="row justify-content-center hide animate__animated" id="HowToStart__btn1">
                     <div class="col-6 col-md-5 col-lg-3 d-flex justify-content-center">
-                        <a href="#" class="HowToStart__btn__link">
+                        <a href="need.html" class="HowToStart__btn__link">
                             <img class="HowToStart__btn" src="img/start_btn.png" alt="">
                         </a>
                         <!--色塊
@@ -319,7 +312,7 @@
 
                             <!--滑動區塊-->
                             <div class="row justify-content-center">
-                                <div id="my-carousel_2" class="carousel slide " data-ride="carousel">
+                                <div id="my-carousel_2" class="carousel slide col-12 col-md-10 " data-ride="carousel">
 
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -385,22 +378,22 @@
                 <div class="col-12 d-flex justify-content-center">
                     <div class="row BecomeBee__pros justify-content-center">
                         <div class="col-12 col-md-3">
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center becomebee__box becomebee__box1">
                                 <img class="pro" src="img/pros_01.png" alt="">
-                                <p class="pro__text">人性化配對</p>
+                                <p class="pro__text text-center">人性化配對</p>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-3 offset-1">
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center becomebee__box">
                                 <img class="pro" src="img/pros_02.png" alt="">
-                                <p class="pro__text">透過知識獲利</p>
+                                <p class="pro__text text-center">透過知識獲利</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-3 offset-1">
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center becomebee__box">
                                 <img class="pro" src="img/pros_03.png" alt="">
-                                <p class="pro__text">累積評價知名度</p>
+                                <p class="pro__text  text-center">累積評價知名度</p>
                             </div>
                         </div>
                     </div>
@@ -414,14 +407,12 @@
             <!-- 按鈕 -->
             <div class="btn_toggler3"></div>
             <div class="row justify-content-center hide animate__animated" id="HowToStart__btn3">
-                <div class="col-6 col-md-5 col-lg-3">
+                <div class="col-6 col-md-5 col-lg-3 d-flex justify-content-center">
                     <a href="#" class="HowToStart__btn__link">
                         <img class="HowToStart__btn" src="img/bigbtn_03.png" alt="">
                     </a>
                 </div>
-
             </div>
-
 
 
 
@@ -432,24 +423,24 @@
 
         <!-- footer -->
         <div class="row footer">
-            <ul class="nav nav-tabs justify-content-center align-items-center col-12">
+            <ul class="nav nav-tabs justify-content-center align-items-center col-12 when800_footer">
                 <div class="row w-75">
-                    <li class="footer__text nav-item col-2"><a
+                    <li class="footer__text nav-item col-12 col-lg-2"><a
                             class="nav-link footer__item d-flex justify-content-center align-items-center"
                             href="#">關於我們</a></li>
-                    <li class="footer__text nav-item col-2"><a
+                    <li class="footer__text nav-item col-12 col-lg-2"><a
                             class="nav-link footer__item d-flex justify-content-center align-items-center"
                             href="#">聯絡我們</a></li>
-                    <li class="footer__text nav-item col-2"><a
+                    <li class="footer__text nav-item col-12 col-lg-2"><a
                             class="nav-link footer__item d-flex justify-content-center align-items-center"
                             href="#">會員專區</a></li>
-                    <li class="footer__text nav-item col-2"><a
+                    <li class="footer__text nav-item col-12 col-lg-2"><a
                             class="nav-link footer__item d-flex justify-content-center align-items-center"
                             href="#">隱私政策</a></li>
-                    <li class="footer__text nav-item col-2"><a
+                    <li class="footer__text nav-item col-12 col-lg-2"><a
                             class="nav-link footer__item d-flex justify-content-center align-items-center"
                             href="#">選擇語言</a></li>
-                    <div class="col-2 d-flex">
+                    <div class="footer__icon__box col-12 col-lg-2 d-flex">
                         <li class="footer__icon nav-item align-self-center"><a href="#"><img class="icon"
                                     src="img/fb_icon.png" alt="fb"></a></li>
                         <li class="footer__icon nav-item align-self-center"><a href="#"><img class="icon"
