@@ -189,6 +189,8 @@ a,a:hover{
 
 .submit_button{
     border: none;
+    outline: none;
+    box-shadow: none;
     margin-top: 20px;
 }
 
