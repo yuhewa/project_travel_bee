@@ -38,6 +38,7 @@ header{
     margin-left: 10px;
     width: 29px;
     height: 29px;
+
 }
 .header__search{
     width: 82px;
@@ -64,10 +65,16 @@ nav{
     padding:10px 8px;
 }
 
-.navbar-toggler img{
-	width: 39px;
-	height: 34px;
+.navbar-toggler{
+    height: 51px;
+    padding: 0px;
+    border: none;
 }
+.navbar-toggler img{
+    width: 39px;
+    height: 33px;
+}
+
 .nav-item > a{
     color:#FFFEF8;
 }
@@ -97,20 +104,36 @@ nav .dropdown-toggle::after {
 }
 
 .nav__color_block{
-    height: 30px;
+    height: 45px;
     background-color: #6cc297;
 
     position: relative;
     left: -30px;
-    bottom: -13px;
+    bottom: -8px;
 }
 
 /*用來消除按鈕的紅色外框線條*/
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus {
+.navbar-toggler-icon:focus,
+.nav-link {
     outline: none;
     box-shadow: none;
+}
+
+
+.nav-item{
+    border: none;
+}
+
+
+.nav-item a{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.noPadding{
+    padding: 0px;
 }
 
 /* nav的廢棄設定
@@ -204,22 +227,24 @@ a,a:hover{
     z-index: 0; 
 }
 .reason p{
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     z-index: 2;
     margin: 0px;
+    font-weight: 700;
+    min-width: 417px;
 }
-/*色塊定義*/
+/* 色塊定義
 .reason__color_block_top{
     width: 200px;
-    height: 40px;
+    height: 20px;
     position: relative;
-    left: -350px;
+    left: -450px;
     top: 30px;
 
     z-index: 1;
     border-radius: 30px;
     background-color: #90D3AF;
-}
+} */
 
 
 .reason__pro__col{
@@ -228,15 +253,27 @@ a,a:hover{
     height: 53px;
     color: white;
     z-index: 50;
+    width: 854px;
 }
 
 
 .reason__icon{
     width: 28px;
     height: 28px;
+
+    margin-right: 9px;
 }
+
+#reason__icon2{
+    width: 16.9px;
+    height: 29.2px;
+}
+
 .reason__text{
     font-size: 0.45rem;
+
+    margin-right: 36px;
+    /* line-height: 53px; */
 }
 
 /*色塊定義*/
@@ -251,6 +288,9 @@ a,a:hover{
     border-radius: 30px;
     background-color: #419E76;
 }
+
+
+
 
 
 /*色塊定義*/
@@ -273,13 +313,17 @@ a,a:hover{
 .HowToStart__tittle , .FindBee__tittle , .BecomeBee__tittle{
     margin: 10px;
     margin-top: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+
+    font-size: 0.8rem;
 }
 .HowToStart__tittle img , .FindBee__tittle img , .BecomeBee__tittle img{
-    width:80px ;
-    height:80px ;
+    width:38px ;
+    height:41px ;
 }
-.HowToStart__tittle .tittle_text{
+
+/* 所有的tittle */
+.tittle_text{
     margin-left: 5px;
     font-size: 1em;
     font-weight: 550;
@@ -287,11 +331,12 @@ a,a:hover{
 
 /*內容部分*/
 
-/*subtittle的font-size: 0.71rem;*/
 .subtittle_number{
-    
-    width: 100%;
-    height: 98px;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 71px;
+    height: 71px;
     max-width: 100px;
 
     color: white;
@@ -300,15 +345,16 @@ a,a:hover{
     background-color: #419E76;
 }
 
-/*
+
 .subtittle_text{
-    margin-left: 0px;
+    font-size: 0.71rem;
+    font-weight: 700;
 }
-*/
+
 
 .content__box{
     max-width: 1100px;
-
+    margin-bottom: 56px;
 }
 
 .content_box_text{
@@ -332,7 +378,8 @@ a,a:hover{
 
 .HowToStart__btn{
     margin: 20px;
-    width: 100%;
+    width: 413px;
+    height: 87px;
     
 }
 
@@ -365,23 +412,30 @@ a,a:hover{
 
 
 .BecomeBee__pros{
-    max-width: 1100px;
+    max-width: 750px;
     
-    padding: 40px;
+    font-size: 0.5rem;
+    padding: 22px 40px;
     margin-bottom: 100px;
 
     background-color: #F4EAC3;
     
 }
+.becomeBee__description{
+    height: 50px;
+    font-size: 0.57rem;
+}
 
 .pro{
-    width: 100%;
-    height: 100%;
+    width: 184px;
+    height: 184px;
 
     max-width:300px;
 }
 
-
+.pro__text{
+    margin-bottom: 0px;
+}
 
 
 .footer{
@@ -455,6 +509,83 @@ a,a:hover{
 }
     
 
+/* RWD */
+
+@media screen and (max-width: 1290px) {
+    .footer ul{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .when800_footer{
+        height: 400px !important;
+    }
+    .footer__icon__box{
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .header__right{
+        opacity: 0;
+    }
+    .when800_reason{
+        height: 150px;
+    }
+    .when800_reason .reason__box{
+        margin-bottom: 7px;
+    }
+
+    .content_box_text{
+        font-size: 0.5rem;
+
+    }
+    /* 一樣沒辦法對齊 
+    .reason__box{
+        justify-content: start !important;
+        padding-left: 200px;
+    } */
+
+    .becomebee__box{
+        /* width: 350px; */
+        margin-bottom: 10px;
+        justify-content: start !important;
+        padding-left:70px;
+    }
+    .becomebee__box1{
+        padding-left: 25%;
+    }
+
+    .when800_footer{
+        height: 400px !important;
+    }
+    .footer__icon__box{
+        justify-content:center;
+    }
+}
+
+
+
+@media screen and (max-width: 465px) {
+    .reason p{
+        font-size: 0.6rem;
+        z-index: 2;
+        margin: 0px;
+        font-weight: 700;
+        min-width: 320px;
+    }
+    .content_box_text{
+        font-size: 0.5rem;
+        min-width: 280px;
+    }
+
+    .pro__text{
+        margin-left: 5%;
+    }
+}
+
 
 /*字體大小動態變化 */
 /*
@@ -472,7 +603,7 @@ a,a:hover{
 */
 
 
-
+/* 
 @media screen and (max-width: 1440px) {
     html{
         font-size: 30pt;

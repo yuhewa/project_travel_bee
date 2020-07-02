@@ -1,0 +1,200 @@
+
+body{
+    background-color:#FFFDF3;
+
+
+    font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+   /* font-weight: 550; */
+    color: #474241;
+    scrollbar-color: #d4fc79 #F5F5F5;
+    
+}
+.tittle{
+    margin-top: 15mm;
+    margin-bottom: 8.9mm;
+}
+
+.tittle__number{
+    background-color: #4D4D4D;
+    color:white;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+
+    margin-right: 10px;
+    border-radius:  999em;
+}
+
+.tittle__text{
+    font-size: 30px;
+    font-weight: 800;
+    color:#4D4D4D;
+}
+.subtittle{
+    margin-bottom: 3mm;
+}
+
+input, textarea, select{
+    border-radius: 10px;
+}
+select{
+    width: 251px;
+    height: 34px;
+}
+input{
+    border: 1px solid #4D4D4D;
+}
+
+
+/* 新嘗試的selector, 可選擇任意arrtibute */
+[for="budget__range1"]{
+    margin-right: 30px;
+}
+
+/* header */
+header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.42em;
+}
+
+.logo{
+    width: 270px;
+    height: 44px;
+}
+.header__right{
+    margin-right: 20px;
+}
+.icon{
+    margin-left: 10px;
+    width: 29px;
+    height: 29px;
+}
+.header__search{
+    width: 82px;
+    margin:0px 10px ;
+}
+
+
+
+/* nav */
+nav{
+    background-color:#64B28B ;
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+/* 調整navbar的高度 */
+.navbar{
+    padding:6px 15px;
+}
+/* 調整選項高度 */
+.nav-link{
+    padding:10px 8px;
+}
+
+.navbar-toggler img{
+	width: 39px;
+	height: 34px;
+}
+.nav-item > a{
+    color:#FFFEF8;
+}
+.nav-link{
+	border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.nav-link:hover{    
+    border: 1px solid transparent;
+    background-color: rgb(83, 148, 116);
+    color: white;
+    border-color: rgb(83, 148, 116);
+}
+.nav-link:focus{
+	background-color: rgb(83, 148, 116);
+}
+/*去掉選單箭頭*/
+nav .dropdown-toggle::after {
+    display:none;
+}
+
+.dropdown-menu a{
+    color: gray;
+    font-size: 0.45rem;
+}
+
+.nav__color_block{
+    height: 30px;
+    background-color: #6cc297;
+
+    position: relative;
+    left: -30px;
+}
+
+/*用來消除按鈕的紅色外框線條*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.nav-link {
+    outline: none;
+    box-shadow: none;
+}
+header a{
+    color: #474241;
+}
+
+a,a:hover{
+    text-decoration:none;
+    color: #474241;
+}
+
+
+.banner {
+	height:285.94px;
+	padding-top: 100px;
+	background-image: url(../img/needhtml_your_need.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+    font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+    
+    margin-bottom: 80px;
+}
+
+
+
+.banner__block{
+	width: 442.24px;
+	height: 148.97px;
+	background-color:rgba(0,0,0,50%);
+	border-radius:20px;
+	padding-top: 12px;
+}
+
+.banner__block__title{
+	font-size: 2.0rem;
+	color: #ffffff;
+
+}
+
+.banner__block__text{
+	font-size: 1.3rem;
+	color: #ffffff;
+	line-height: 25px;
+}
+
+
+.submit_button{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+.submit_button:hover{
+    filter: brightness(80%);
+    -webkit-filter:brightness(80%); 
+}

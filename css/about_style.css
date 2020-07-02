@@ -1,0 +1,292 @@
+html{
+	width: 100%;
+	font-size: 20px;
+	background-color:#FFFEF8 ; 
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+}
+
+.header{
+	height: 63px;
+	background-color:#FFFEF8 ; 
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+}
+
+.header__logo{
+	width: 270.85px;
+	height: 44.12px;
+}
+
+.header__logo__logo{
+	width: 225.13px;
+	height: 44.12px;
+}
+
+.header__logo__bee{
+	width: 31px;
+	height: 34.76px
+}
+
+.header__right{
+	min-width: 250px;
+	height: 27px;
+}
+
+.header__right__icon{
+	min-width: 80.56px;
+	height: 23.30px;
+}
+
+.banner {
+	height:285.94px;
+	padding-top: 100px;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+}
+
+
+
+.banner__block{
+	width: 442.24px;
+	height: 148.97px;
+	background-color:rgba(0,0,0,50%);
+	border-radius:20px;
+	padding-top: 12px;
+}
+
+.banner__block__title{
+	font-size: 2.0rem;
+	color: #ffffff;
+
+}
+
+.banner__block__text{
+	font-size: 1.3rem;
+	color: #ffffff;
+	line-height: 25px;
+}
+
+.meet{
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+}
+
+.meet__block__top__block__bee{
+	width: 38.69px;
+	height: 41.23px;
+}
+
+.meet__block__top__block__block{
+	border-style: solid;
+	border-radius: 40px;
+	height: 58px;
+	border-color:#565352 ;
+}
+
+.meet__block__top__block__block__text{
+	font-size: 1.5rem;
+	color:#565352;
+	min-width: 320px;
+	font-weight: 800;
+	padding-bottom: 50px;
+}
+
+.meet__block__bottom__text{
+	font-size: 1rem;
+	color:#565352;
+}
+
+.main{
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+}
+
+.main__title{
+	font-size: 1.5rem;
+}
+
+.main__need{
+	background-color: #F1E7C1;
+	box-sizing: border-box;
+
+}
+
+.main__need__left__text__title{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.main__need__right__photo{
+	max-width: 100%;
+}
+
+.main__be__left__photo{
+	max-width: 100%;
+}
+
+.main__be__right__text__title{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+
+
+.contact {
+	height:750px;
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+	padding-top: 100px;
+	background-image: url(../img/contact.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top center;
+}
+
+.contact__title__text {
+	color:#ffffff;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.contact .form {
+	max-width: 600px;
+	margin:0 auto;
+	padding: 0 30px;
+	color:#ffffff;
+}
+
+.form input {
+	height: 40px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+.form textarea {
+	height: 200px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+.footer{
+	background-color:#64B28B ;
+	font-family: "Arial","Helvetica", "Noto Sans TC","微軟正黑體", sans-serif;
+}
+
+.footer__block__textbox__text{
+	list-style: none;
+	padding: 30px 10px 30px 10px;
+}
+
+.footer__block__icon{
+	padding: 30px 10px 30px 10px;
+}
+
+
+
+
+
+/* 翻牌效果 */
+
+#card__area{
+	perspective: 953.32px;
+}
+#card {
+	width: 476.66px;
+	height: 100%;
+	transition: transform 1.3s;
+	transform-style: preserve-3d;
+	cursor:pointer;
+}
+#card__area:hover #card{
+	transform: rotateY( 180deg );
+  }
+
+
+
+
+/***** 漢堡選單 *****/
+nav{
+    background-color:#64B28B ;
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+	font-family: "微軟正黑體";
+}
+/* 調整navbar的高度 */
+.navbar{
+    padding:6px 15px;
+}
+/* 調整選項高度 */
+.nav-link{
+    padding:10px 8px;
+}
+.navbar-toggler{
+    height: 51px;
+    padding: 0px;
+    border: none;
+}
+.navbar-toggler img{
+    width: 39px;
+    height: 33px;
+}
+.nav-item > a{
+    color:#FFFEF8;
+}
+.nav-link{
+	border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.nav-link:hover{    
+    border: 1px solid transparent;
+    background-color: rgb(83, 148, 116);
+    color: white;
+    border-color: rgb(83, 148, 116);
+}
+.nav-link:focus{
+	background-color: rgb(83, 148, 116);
+}
+/*去掉選單箭頭*/
+nav .dropdown-toggle::after {
+    display:none;
+}
+.dropdown-menu a{
+    color: gray;
+    font-size: 1.1rem;
+	font-family: "微軟正黑體";
+}
+.nav__color_block{
+    height: 45px;
+    background-color: #6cc297;
+
+    position: relative;
+    left: -30px;
+    bottom: -8px;
+}
+/*用來消除按鈕的紅色外框線條*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.nav-item a{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
