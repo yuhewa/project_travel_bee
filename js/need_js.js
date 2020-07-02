@@ -20,8 +20,8 @@ function need(){
     const money1_1 = money1_1Element.value;
     const money1_2Element = document.querySelector('[data-action="money1_2"]');
     const money1_2 = money1_2Element.value;
-
     var now=new Date();;
+    
     db.collection("your_need").doc(`${now}`).set({
         purpose: `${purpose}`,
         money1_1:`${money1_1}`,
